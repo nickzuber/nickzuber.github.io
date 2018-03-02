@@ -3,29 +3,22 @@ import Link from 'gatsby-link'
 
 const Header = () => (
   <div
+    className='header-section'
     style={{
-      background: 'rebeccapurple',
+      background: 'none',
       marginBottom: '1.45rem',
     }}
   >
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
+        textAlign: 'right',
+        boxSizing: 'border-box',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
+      <Link className='not-btn' to="/work/">Work</Link>
+      <a className='not-btn'href='https://github.com/nickzuber'>GitHub</a>
+      <Link className='btn'to="/">Blog</Link>
     </div>
   </div>
 )
