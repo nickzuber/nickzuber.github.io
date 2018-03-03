@@ -16,9 +16,10 @@ const Header = () => (
         boxSizing: 'border-box',
       }}
     >
+      <Link className='not-btn' to="/">Home</Link>
       <Link className='not-btn' to="/work/">Work</Link>
       <a className='not-btn'href='https://github.com/nickzuber'>GitHub</a>
-      <Link className='btn'to="/">Blog</Link>
+      <Link className='btn'to="/blog/">Blog</Link>
     </div>
   </div>
 )

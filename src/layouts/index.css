@@ -6,7 +6,8 @@
 }
 html {
   font-size: 15px;
-  font-family: BlinkMacSystemFont, 'Inter UI', -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Inter UI', BlinkMacSystemFont, -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #32383E;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -218,7 +219,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: #32383E;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -631,6 +632,38 @@ pre tt:after {
   }
 }
 
+.wrapper {
+  margin: 0 auto 22px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.content {
+  padding: 50px 0 0;
+  width: 520px;
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+}
+.content h1 {
+  font-weight: 600;
+  font-size: 1.8em;
+  display: inline-block;
+  letter-spacing: -.05em;
+  font-style: italic;
+  margin: 25px 0 12px;
+  padding: 0;
+}
+.content p {
+  margin-bottom: 50px;
+}
+
 .header-section a {
   font-size: 13px;
   color: #666;
@@ -641,7 +674,7 @@ pre tt:after {
 }
 .header-section a.not-btn {
   padding: 30px 15px;
-  margin: 0
+  margin: 0;
 }
 .header-section a.btn {
   margin: 10px;
@@ -673,10 +706,91 @@ pre tt:after {
 }
 
 .has_bursted {
-  animation: heart-burst .8s steps(28) 1;
+  animation: stary-burst .8s steps(28) 1;
 }
 
-@keyframes heart-burst {
+@keyframes stary-burst {
   from {background-position:left;}
   to { background-position:right;}
+}
+
+.hot-links {
+  position: relative;
+  background: none;
+  min-width: 300px;
+  min-height: 30px;
+  margin: 10px auto 20px;
+}
+.hot-links a {
+  outline: none !important;
+  margin: 10px 7px;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  box-sizing: border-box;
+  background-color: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: .5;
+  cursor: pointer;
+  -webkit-transition: all 100ms linear;
+  -moz-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+.hot-links a:hover {
+  opacity: 1;
+}
+svg {
+  height: auto;
+  width: auto;
+}
+
+.animate-highlight-text-right {
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #fbe9a3 50%);
+  background-position: 0% 0;
+  background-size: 200% auto;
+  animation: slide-highlight-right .3s cubic-bezier(1.000, 0.005, 0.825, 0.455) 1;
+  animation-delay: .1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-highlight-right {
+  from {background-position: 0% 0;}
+  to { background-position: -100% 0;}
+}
+
+.animate-highlight-text-left {
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #fbe9a3 50%);
+  background-position: 0% 0;
+  background-size: 200% auto;
+  animation: slide-highlight-left .3s cubic-bezier(1.000, 0.005, 0.825, 0.455) 1;
+  animation-delay: .1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-highlight-left {
+  from {background-position: 0% 0;}
+  to { background-position: 100% 0;}
+}
+
+p {
+  font-size: 15px;
+  line-height: 24.8px;
+  color: #47525d;
+  font-weight: 400;
+  margin-bottom: 26px;
+}
+
+a {
+  color: #2D99D3;
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+a:hover {
+  opacity: .75;
 }
