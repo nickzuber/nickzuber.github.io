@@ -19,7 +19,7 @@ const Header = ({ children }) =>
       letterSpacing: '-.05em',
       margin: 0,
       display: 'inline-block',
-      fontStyle: 'italic',
+      // fontStyle: 'italic',
       padding: '0 10px'
     }}>{children}</h1>
 

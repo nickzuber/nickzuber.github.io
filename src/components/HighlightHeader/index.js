@@ -11,9 +11,8 @@ const HighlightHeader = ({ children }) => {
       <VisibilitySensor
         onChange={(isVisible) => {
           if (isVisible) {
-            console.log(document.querySelector(`.${headerClass}`).classList.add('animate-highlight-text-right'))
+            document.querySelector(`.${headerClass}`).classList.add('animate-highlight-text-right')
           }
-          console.log('Element is now %s', isVisible ? 'visible' : 'hidden')
         }}
       />
     </div>

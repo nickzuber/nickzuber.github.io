@@ -655,14 +655,40 @@ pre tt:after {
   font-weight: 600;
   font-size: 1.8em;
   display: inline-block;
-  letter-spacing: -.05em;
-  font-style: italic;
-  margin: 25px 0 12px;
-  padding: 0;
+  letter-spacing: -.035em;
+  margin: 25px 0 12px -5px;
+  padding: 0 5px 0;
 }
 .content p {
   margin-bottom: 50px;
 }
+
+.item-wrapper {
+  margin: 0  auto;
+  display: table-row;
+  text-align: left;
+  width: 100%;
+}
+.item-wrapper .item-icon {
+  display: table-cell;
+  width: 75px;
+  position: relative;
+}
+.item-wrapper .item-content {
+  display: table-cell;
+}
+.item-icon-base {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: absolute;
+  top: 25px;
+}
+
 
 .header-section a {
   font-size: 13px;
@@ -759,21 +785,6 @@ svg {
 @keyframes slide-highlight-right {
   from {background-position: 0% 0;}
   to { background-position: -100% 0;}
-}
-
-.animate-highlight-text-left {
-  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #fbe9a3 50%);
-  background-position: 0% 0;
-  background-size: 200% auto;
-  animation: slide-highlight-left .3s cubic-bezier(1.000, 0.005, 0.825, 0.455) 1;
-  animation-delay: .1s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-@keyframes slide-highlight-left {
-  from {background-position: 0% 0;}
-  to { background-position: 100% 0;}
 }
 
 p {
