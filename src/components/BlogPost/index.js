@@ -21,18 +21,17 @@ function getTagColor (tag) {
   }
 }
 
-const Title = ({ path, children }) =>
-  <Link to={path}>
-    <h1
-      style={{
-        fontWeight: '500',
-        fontSize: '20px',
-        letterSpacing: '-0.025em',
-        margin: '0px',
-        display: 'block',
-        padding: '0'
-      }}>{children}</h1>
-  </Link>
+const Title = ({ children }) =>
+  <h1
+    style={{
+      fontWeight: '600',
+      fontSize: '20px',
+      letterSpacing: '-0.02em',
+      margin: '0px',
+      color: '#32383e',
+      display: 'block',
+      padding: '0'
+    }}>{children}</h1>
 
 export const DateAndTags = ({ tags, children }) =>
   <div style={{
@@ -43,7 +42,11 @@ export const DateAndTags = ({ tags, children }) =>
     fontSize: '14px'
   }}>
     {tags.map(name => (
-      <span style={{ background: getTagColor(name) }} className="blog-tag">
+      <span
+        key={name}
+        className="blog-tag"
+        style={{ background: getTagColor(name) }}
+      >
         {name}
       </span>
     ))}
@@ -71,9 +74,11 @@ const BlogPost = ({ title, path, tags, date, desc }) => (
     margin: '20px 0',
     padding: '0 0 20px'
   }}>
-    <Title path={path}>{title}</Title>
-    <DateAndTags tags={tags}>Nick Zuber — {date}</DateAndTags>
-    <Description>{desc}</Description>
+    <Link to={path}>
+      <Title>{title}</Title>
+      <DateAndTags tags={tags}>Nick Zuber — {date}</DateAndTags>
+      <Description>{desc}</Description>
+    </Link>
   </div>
 )
 
