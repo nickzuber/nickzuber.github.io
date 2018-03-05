@@ -9,6 +9,7 @@ import PrinterIcon from '../../img/printer.png'
 import LaptopIcon from '../../img/laptop.png'
 import TravelIcon from '../../img/luggage.png'
 import SocialIcon from '../../img/helmet.png'
+import Sheet from '../../img/sprite-sheet.png'
 
 function getIcon (t) {
   switch (t) {
@@ -33,7 +34,8 @@ const Icon = ({ icon }) => (
   <div
     className="item-icon-base"
     style={{
-      backgroundImage: `url(${getIcon(icon)})`
+      // backgroundImage: `url(${getIcon(icon)})`
+      backgroundImage: `url(${Sheet})`
     }}
   />
 )

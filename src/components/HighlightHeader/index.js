@@ -7,7 +7,11 @@ const HighlightHeader = ({ children }) => {
   const headerClass = `header-${id}`
   return (
     <div>
-      <h1 className={headerClass}>{children}</h1>
+      <h1
+        className={headerClass}
+        style={{
+          textTransform: 'capitalize'
+        }}>{children}</h1>
       <VisibilitySensor
         onChange={(isVisible) => {
           if (isVisible) {

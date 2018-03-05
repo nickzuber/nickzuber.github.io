@@ -7,7 +7,7 @@ const Profile = () => (
     style={{
       position: 'relative',
       height: '110px',
-      margin: '30px 0 0'
+      margin: '0'
     }}
   >
     <div

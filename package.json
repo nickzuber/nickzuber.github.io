@@ -6,8 +6,11 @@
   "dependencies": {
     "gatsby": "^1.9.218",
     "gatsby-link": "^1.6.37",
+    "gatsby-plugin-catch-links": "^1.0.19",
     "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-react-helmet": "^2.0.5",
+    "gatsby-source-filesystem": "^1.5.26",
+    "gatsby-transformer-remark": "^1.7.34",
     "gud": "^1.0.0",
     "react-helmet": "^5.2.0",
     "react-visibility-sensor": "^3.11.0"

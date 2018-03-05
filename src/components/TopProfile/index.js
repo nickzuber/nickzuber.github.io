@@ -2,24 +2,18 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Profile from '../Profile'
 import HotLinks from '../HotLinks'
-
-const Span = ({ children }) =>
-  <span
-    style={{
-      color: '#EB298C',
-      fontWeight: '400'
-    }}>{children}</span>
+import TextCycle from '../TextCycle';
 
 const Header = ({ children }) =>
   <h1
-    className='animate-highlight-text-right'
+    // className='animate-highlight-text-right'
     style={{
+      // fontStyle: 'italic',
       fontWeight: '600',
       fontSize: '3em',
       letterSpacing: '-.05em',
       margin: 0,
       display: 'inline-block',
-      // fontStyle: 'italic',
       padding: '0 10px'
     }}>{children}</h1>
 
@@ -41,7 +35,7 @@ const TopProfile = () => (
   }}>
     <Profile />
     <Header>Nick Zuber</Header>
-    <Subheader>Software engineer working on <Span>stuff</Span></Subheader>
+    <Subheader>Software engineer studying <TextCycle>stuff</TextCycle></Subheader>
     <HotLinks />
   </div>
 )

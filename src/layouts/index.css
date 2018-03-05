@@ -626,38 +626,32 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
 
+/* Custom stuff */
 .wrapper {
   margin: 0 auto 22px;
   padding-right: 30px;
   padding-left: 30px;
 }
-@media screen and (max-width: 800px) {
-  .wrapper {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
 
 .content {
-  padding: 50px 0 0;
+  padding: 25px 0 0;
   width: 520px;
   position: relative;
   margin: 0 auto;
   text-align: left;
 }
 .content h1 {
+  /* font-style: italic; */
   font-weight: 600;
-  font-size: 1.8em;
+  font-size: 23px;  /* we don't want a header breaking onto next line on mobile */
+  border-radius: 5px;
+  /* text-transform: capitalize; */
   display: inline-block;
-  letter-spacing: -.035em;
-  margin: 25px 0 12px -5px;
-  padding: 0 5px 0;
+  line-height: 1.333em;
+  letter-spacing: -.02em;
+  margin: 25px 0 12px -10px;
+  padding: 0 10px 0;
 }
 .content p {
   margin-bottom: 50px;
@@ -687,8 +681,14 @@ pre tt:after {
   border-radius: 100%;
   position: absolute;
   top: 25px;
+  /* for bursting */
+  background-position: left;
+  background-size: 2900%;
+  top: -25px;
+  left: -50px;
+  height: 150px;
+  width: 150px;
 }
-
 
 .header-section a {
   font-size: 13px;
@@ -721,11 +721,12 @@ pre tt:after {
   margin: 0 auto;
   height: 250px;
   width: 250px;
-  background-position: right;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: 2900%;
   position: absolute;
-  z-index: -1;
+  z-index: -1;  /* Place header over image */
+  z-index: 1;   /* Let image particles spilled over header (cool) */
   top: -75px;
   left: 50%;
   margin-left: -125px;
@@ -733,6 +734,9 @@ pre tt:after {
 
 .has_bursted {
   animation: stary-burst .8s steps(28) 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  z-index: -1;
 }
 
 @keyframes stary-burst {
@@ -804,4 +808,76 @@ a {
 }
 a:hover {
   opacity: .75;
+}
+
+.text-cycle {
+  display: inline-block;
+  overflow: hidden;
+  height: 24.4px;  /* same height as the h2 header text */
+  vertical-align: bottom;
+}
+.text-cycle ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-transition: margin-top .45s ease-in-out;
+  -moz-transition: margin-top .45s ease-in-out;
+  transition: margin-top .45s ease-in-out;
+}
+.text-cycle li {
+  display: block;
+  color: #EE3F46;
+  height: 30px;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Keep media queries at bottom */
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 100%;
+  }
+  .content {
+    width: 100%;
+  }
+  p {
+    font-size: 18px;
+    line-height: 27.8px;
+  }
+  .wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .text-cycle {
+    margin-top: 10px;
+  }
+  .text-cycle li {
+    text-align: center;
+    height: 29px;
+  }
+}
+
+/* Blog stuff */
+.blog-content {
+  margin: 15px 0 50px;
+}
+.blog-content p {
+  margin: 10px 0;
+}
+.blog-content h2 {
+  margin: 35px 0 20px;
+}
+
+.blog-tag {
+  box-sizing: border-box;
+  font-size: 11px;
+  padding: 0 8px;
+  margin-right: 8px;
+  font-weight: 600;
+  height: 20px;
+  border-radius: 20px;
+  color: #fff;
+  background: none;
+  display: inline-block;
+  text-transform: capitalize;
 }
