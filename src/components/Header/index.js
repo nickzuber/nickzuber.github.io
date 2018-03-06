@@ -18,7 +18,7 @@ const Header = () => (
     >
       <Link className='not-btn' to="/">Home</Link>
       <Link className='not-btn' to="/work/">Work</Link>
-      <a className='not-btn'href='https://github.com/nickzuber'>GitHub</a>
+      <a target="_blank" className='not-btn'href='https://github.com/nickzuber'>GitHub</a>
       <Link className='btn'to="/blog/">Blog</Link>
     </div>
   </div>

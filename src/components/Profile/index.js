@@ -12,7 +12,7 @@ const Profile = () => (
   >
     <div
       style={{backgroundImage: `url(${Sheet})`}}
-      className="profile has_bursted"
+      className="profile has-bursted"
     />
   </div>
 )

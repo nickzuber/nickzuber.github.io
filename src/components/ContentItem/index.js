@@ -10,7 +10,7 @@ function onChange (isVisible, icon, contentItemClass) {
   if (isVisible) {
     document.querySelector(`.${contentItemClass} .item-content h1`).classList.add('animate-highlight-text-right')
     // add correct icon burst class
-    document.querySelector(`.${contentItemClass} .item-icon .item-icon-base`).classList.add('has_bursted')
+    document.querySelector(`.${contentItemClass} .item-icon .item-icon-base`).classList.add('has-bursted')
   }
 }
 

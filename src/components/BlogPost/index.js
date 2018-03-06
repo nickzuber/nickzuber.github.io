@@ -25,8 +25,8 @@ const Title = ({ children }) =>
   <h1
     style={{
       fontWeight: '600',
-      fontSize: '20px',
-      letterSpacing: '-0.02em',
+      fontSize: '21px',
+      letterSpacing: '-0.025em',
       margin: '0px',
       color: '#32383e',
       display: 'block',
@@ -61,12 +61,7 @@ export const DateAndTags = ({ tags, children }) =>
 const Description = ({ children }) =>
   <p
     style={{
-      fontSize: '14px',
       margin: '0 0 10px',
-      textAlign: 'justify',
-      overflow: 'hidden',
-      maxHeight: '72px',
-      lineHeight: '24px'
     }}>{children}</p>
 
 const BlogPost = ({ title, path, tags, date, desc }) => (
