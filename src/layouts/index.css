@@ -677,6 +677,9 @@ pre tt:after {
   display: table-cell;
   vertical-align: top;
 }
+.work-right h1 {
+  width: 100%;
+}
 .work-left {
   width: 75px;
   text-align: center;
@@ -691,7 +694,7 @@ svg.work-line {
 .work-line {
   opacity: 0;
   transition: opacity .4s ease-in;
-  animation: hover 6s ease-in-out infinite;
+  animation: hover 4s ease-in-out infinite;
   animation-delay: .1s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -715,7 +718,7 @@ svg.work-line {
 
 @keyframes hover {
   0% { transform: translateY(0px); }
-  50% { transform: translateY(4px); }
+  50% { transform: translateY(5px); }
   100% { transform: translateY(0px); }
 }
 
