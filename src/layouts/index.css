@@ -685,12 +685,12 @@ pre tt:after {
 svg.work-line {
   position: absolute;
   height: 85%;
-  left: 10px;
+  left: 8px;
   top: 50px;
 }
 .work-line {
   opacity: 0;
-  transition: all .4s ease-in;
+  transition: opacity .4s ease-in;
   animation: hover 6s ease-in-out infinite;
   animation-delay: .1s;
   -webkit-animation-fill-mode: forwards;
@@ -720,7 +720,8 @@ svg.work-line {
 }
 
 .item-wrapper {
-  margin: 0  auto;
+  position: relative;
+  margin: 0 auto;
   display: table-row;
   text-align: left;
   width: 100%;
@@ -836,6 +837,13 @@ svg.work-line {
 svg {
   height: auto;
   width: auto;
+}
+
+.item-safe-wrapper, .work-safe-wrapper {
+  opacity: .1;
+  transition: opacity .3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .animate-highlight-text-right {
