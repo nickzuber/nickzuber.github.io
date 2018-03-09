@@ -12,10 +12,7 @@ import LaptopSheet from '../../img/sheets/sprite-sheet-laptop.png'
 import TravelSheet from '../../img/sheets/sprite-sheet-luggage.png'
 import SocialSheet from '../../img/sheets/sprite-sheet-helmet.png'
 
-import RobinSheet from '../../img/sheets/sprite-sheet-robin.png'
-import BoxSheet from '../../img/sheets/sprite-sheet-box.png'
-import VerandaSheet from '../../img/sheets/sprite-sheet-veranda.png'
-import UmlSheet from '../../img/sheets/sprite-sheet-uml.png'
+import WrenchSheet from '../../img/sheets/sprite-sheet-wrench.png'
 
 function getIcon (t) {
   switch (t) {
@@ -31,14 +28,8 @@ function getIcon (t) {
       return SocialSheet
     case 'travel':
       return TravelSheet
-    case 'robin':
-      return RobinSheet
-    case 'box':
-      return BoxSheet
-    case 'veranda':
-      return VerandaSheet
-    case 'uml':
-      return UmlSheet
+    case 'wrench':
+      return WrenchSheet
     default:
       return RobinSheet
   }

@@ -4,10 +4,10 @@ import FileSaver from 'file-saver'
 
 import TemplateSheet from '../img/sprite-sheet-template.png'
 
-const NAME = 'veranda'
+const NAME = 'luggage'
 
 // this should be 128x128px
-import Img from '../img/veranda.png'
+import Img from '../img/luggage.png'
 
 function createAndSaveImage (name) {
   domtoimage.toBlob(document.querySelector('.sprite-sheet-wrapper'))

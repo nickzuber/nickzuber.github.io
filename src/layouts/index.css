@@ -750,12 +750,18 @@ svg.work-line {
   position: absolute;
   top: 25px;
   /* for bursting */
-  background-position: left;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  background-position: right;
   background-size: 2900%;
-  top: -25px;
+  height: 140px;
+  width: 140px;
+  top: -20px;
+  left: -45px;
+  /* top: -25px;
   left: -50px;
   height: 150px;
-  width: 150px;
+  width: 150px; */
 }
 
 .header-section a {
@@ -793,7 +799,6 @@ svg.work-line {
   background-repeat: no-repeat;
   background-size: 2900%;
   position: absolute;
-  z-index: -1;  /* Place header over image */
   z-index: 1;   /* Let image particles spilled over header (cool) */
   top: -75px;
   left: 50%;
@@ -804,7 +809,7 @@ svg.work-line {
   animation: stary-burst .8s steps(28) 1;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  z-index: -1;
+  background-attachment: initial;
 }
 
 @keyframes stary-burst {

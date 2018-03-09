@@ -47,7 +47,6 @@ const Company = ({ color, title, place }) => {
   } else {
     totalTitleList.push(title)
   }
-  console.log(totalTitleList)
   return (
     <h1 style={{ lineHeight: '1.1em' }}>
       {totalTitleList.map(title => <span id={title} className="work-title">{title}</span>)}
@@ -63,7 +62,7 @@ const WorkPage = () => (
   <div style={{textAlign: 'center' }}>
     <TopProfile />
 
-    <WorkItem icon="robin" d={curve1}>
+    <WorkItem icon="wrench" d={curve1}>
       <Company
         title="Software Engineer"
         color="#EE3F46"
@@ -73,7 +72,7 @@ const WorkPage = () => (
       <p>I'll be rejoining the Robin engineering team to make it easier to manage your meeting rooms. Working with React, React Native, and Redux for web, iOS, and Android mobile apps.</p>
     </WorkItem>
 
-    <WorkItem icon="box" d={curve2}>
+    <WorkItem icon="wrench" d={curve2}>
       <Company
         title="Software Engineering Intern"
         color="rgb(17, 82, 216)"
@@ -83,7 +82,7 @@ const WorkPage = () => (
       <p>Spent the summer working on ClusterRunner, a tool that helps run test suites in the fastest and most efficient way possible. Worked with Python and SQLite to build APIs and developer tools.</p>
     </WorkItem>
 
-    <WorkItem icon="robin" d={curve1}>
+    <WorkItem icon="wrench" d={curve1}>
       <Company
         title="Software Engineering Intern"
         color="#EE3F46"
@@ -93,7 +92,7 @@ const WorkPage = () => (
       <p>Over the summer, I helped develop Robin's new user facing mobile app. Worked with React Native and Redux for both iOS and Android mobile apps.</p>
     </WorkItem>
 
-    <WorkItem icon="veranda" d={curve2}>
+    <WorkItem icon="wrench" d={curve2}>
       <Company
         title="Software Developer"
         color="#2cb673"
@@ -103,7 +102,7 @@ const WorkPage = () => (
       <p>Led a small team of developers and created a wholesale ordering platform. Worked with PHP and MySQL to build out relational databases and user interfaces.</p>
     </WorkItem>
 
-    <WorkItem icon="uml" d={curve1} isLast={true}>
+    <WorkItem icon="wrench" d={curve1} isLast={true}>
       <Company
         title="Freelance Software Engineer"
         color="#0468b1"
