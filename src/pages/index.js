@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => {
         <p>When I'm not reading about new things, I like <Link to="/blog/">writing about them</Link>. I've recently learned about <Link to={firstPost.path}>{firstPost.title}</Link>.</p>
       </ContentItem>
 
-      <ContentItem icon="printer">
+      <ContentItem icon="letter">
         <h1>Experience and resume</h1>
         <p>I've been around the block a few times, learning plenty of new skills and gaining tons of experience along the way. You can <a href="./NickZuberResume.pdf">take a look at my resume</a> to see what I've been up to lately.</p>
       </ContentItem>

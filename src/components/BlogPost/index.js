@@ -38,7 +38,7 @@ export const DateAndTags = ({ tags, children }) =>
     margin: '8px 0',
     lineHeight: '21px',
     textAlign: 'left',
-    color: 'rgba(165, 170, 173, 0.75)',
+    color: 'rgba(50, 77, 90, 0.35)',
     fontSize: '14px'
   }}>
     {tags.map(name => (
@@ -53,7 +53,7 @@ export const DateAndTags = ({ tags, children }) =>
     <span
       style={{
         fontWeight: '400',
-        color: 'rgba(165, 170, 173, 0.75)',
+        color: 'rgba(50, 77, 90, 0.35)',
         margin: '10px auto',
       }}>{children}</span>
   </div>

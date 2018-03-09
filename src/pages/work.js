@@ -14,24 +14,11 @@ const DateSubtitle = ({ children }) =>
     fontSize: '90%',
     fontWeight: '500',
     display: 'block',
-    color: 'rgba(165, 170, 173, 0.75)',
+    color: 'rgba(50, 77, 90, 0.35)',
     width: '100%',
   }}>
     {children}
   </span>
-
-const SvgDashedLine = ({ d }) =>
-  <svg className="work-line" width="50" height="195" viewBox="62 5 50 200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <g fill="none">
-      <path
-        strokeWidth="2"
-        stroke="rgba(165, 170, 173, 0.75)"
-        strokeLinecap="round"
-        strokeDasharray="15, 10, 5, 10, 15"
-        d={d}
-      />
-    </g>
-  </svg>
 
 const Company = ({ color, title, place }) =>
   <h1 style={{ lineHeight: '1.1em' }}>
@@ -45,7 +32,7 @@ const WorkPage = () => (
   <div style={{textAlign: 'center' }}>
     <TopProfile />
 
-    <WorkItem d={curve1}>
+    <WorkItem icon="robin" d={curve1}>
       <Company
         title="Software Engineer"
         color="#EE3F46"
@@ -55,17 +42,17 @@ const WorkPage = () => (
       <p>I'll be rejoining the Robin engineering team to make it easier to manage your meeting rooms. Working with React, React Native, and Redux for web, iOS, and Android mobile apps.</p>
     </WorkItem>
 
-    <WorkItem d={curve2}>
+    <WorkItem icon="box" d={curve2}>
       <Company
         title="Software Engineering Intern"
-        color="#0482c4"
+        color="rgb(17, 82, 216)"
         place="Box"
       />
       <DateSubtitle>June 2017 — August 2017</DateSubtitle>
       <p>Spent the summer working on ClusterRunner, a tool that helps run test suites in the fastest and most efficient way possible. Worked with Python and SQLite to build APIs and developer tools.</p>
     </WorkItem>
 
-    <WorkItem d={curve1}>
+    <WorkItem icon="robin" d={curve1}>
       <Company
         title="Software Engineering Intern"
         color="#EE3F46"
@@ -75,7 +62,7 @@ const WorkPage = () => (
       <p>Over the summer, I helped develop Robin's new user facing mobile app. Worked with React Native and Redux for both iOS and Android mobile apps.</p>
     </WorkItem>
 
-    <WorkItem d={curve2}>
+    <WorkItem icon="veranda" d={curve2}>
       <Company
         title="Software Developer"
         color="#2cb673"
@@ -85,7 +72,7 @@ const WorkPage = () => (
       <p>Led a small team of developers and created a wholesale ordering platform. Worked with PHP and MySQL to build out relational databases and user interfaces.</p>
     </WorkItem>
 
-    <WorkItem d={curve1} isLast={true}>
+    <WorkItem icon="uml" d={curve1} isLast={true}>
       <Company
         title="Freelance Software Engineer"
         color="#0468b1"

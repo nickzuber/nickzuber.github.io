@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Sheet from '../../img/sprite-sheet.png'
+import ProfileSheet from '../../img/sheets/sprite-sheet-profile.png'
 
 const Profile = () => (
   <div
@@ -11,7 +11,7 @@ const Profile = () => (
     }}
   >
     <div
-      style={{backgroundImage: `url(${Sheet})`}}
+      style={{backgroundImage: `url(${ProfileSheet})`}}
       className="profile has-bursted"
     />
   </div>

@@ -21,7 +21,7 @@ const Subheader = ({ children }) =>
   <h2
     style={{
       fontWeight: '400',
-      color: 'rgba(165, 170, 173, 0.75)',
+      color: 'rgba(50, 77, 90, 0.35)',
       fontSize: '1.5em',
       letterSpacing: '-0.02em',
       margin: '10px auto',

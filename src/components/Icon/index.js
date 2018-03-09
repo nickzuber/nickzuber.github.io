@@ -3,30 +3,42 @@ import Link from 'gatsby-link'
 import TopProfile from '../TopProfile'
 import HighlightHeader from '../HighlightHeader'
 
-import HeartIcon from '../../img/heart.png'
-import PencilIcon from '../../img/pencil.png'
-import PrinterIcon from '../../img/printer.png'
-import LaptopIcon from '../../img/laptop.png'
-import TravelIcon from '../../img/luggage.png'
-import SocialIcon from '../../img/helmet.png'
-import Sheet from '../../img/sprite-sheet.png'
+import ProfileSheet from '../../img/sheets/sprite-sheet-profile.png'
+
+import HeartSheet from '../../img/sheets/sprite-sheet-heart.png'
+import PencilSheet from '../../img/sheets/sprite-sheet-pencil.png'
+import LetterSheet from '../../img/sheets/sprite-sheet-letter.png'
+import LaptopSheet from '../../img/sheets/sprite-sheet-laptop.png'
+import TravelSheet from '../../img/sheets/sprite-sheet-luggage.png'
+import SocialSheet from '../../img/sheets/sprite-sheet-helmet.png'
+
+import RobinSheet from '../../img/sheets/sprite-sheet-robin.png'
+import BoxSheet from '../../img/sheets/sprite-sheet-box.png'
+import UmlSheet from '../../img/sheets/sprite-sheet-uml.png'
 
 function getIcon (t) {
   switch (t) {
-    case 'heart':
-      return HeartIcon
-    case 'pencil':
-      return PencilIcon
-    case 'printer':
-      return PrinterIcon
-    case 'social':
-      return SocialIcon
-    case 'travel':
-      return TravelIcon
     case 'laptop':
-      return LaptopIcon
+      return LaptopSheet
+    case 'heart':
+      return HeartSheet
+    case 'pencil':
+      return PencilSheet
+    case 'letter':
+      return LetterSheet
+    case 'social':
+      return SocialSheet
+    case 'travel':
+      return TravelSheet
+    case 'robin':
+      return RobinSheet
+    case 'box':
+      return BoxSheet
+    case 'veranda':
+    case 'uml':
+      return UmlSheet
     default:
-      return HeartIcon
+      return RobinSheet
   }
 }
 
@@ -34,8 +46,7 @@ const Icon = ({ icon }) => (
   <div
     className="item-icon-base"
     style={{
-      // backgroundImage: `url(${getIcon(icon)})`
-      backgroundImage: `url(${Sheet})`
+      backgroundImage: `url(${getIcon(icon)})`
     }}
   />
 )

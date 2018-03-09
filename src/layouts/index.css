@@ -750,7 +750,7 @@ svg.work-line {
   /* for bursting */
   background-position: left;
   background-size: 2900%;
-  top: -25px;
+  top: -29px;
   left: -50px;
   height: 150px;
   width: 150px;
@@ -806,8 +806,12 @@ svg.work-line {
 }
 
 @keyframes stary-burst {
-  from {background-position:left;}
-  to { background-position:right;}
+  from {
+    background-position:left;
+  }
+  to {
+    background-position: right;
+  }
 }
 
 .hot-links {
@@ -917,6 +921,15 @@ a:hover {
 }
 .blog-content h2 {
   margin: 35px 0 20px;
+  font-size: 21px;
+}
+.blog-content h3 {
+  margin: 35px 0 20px;
+  font-size: 19px;
+}
+.blog-content h4, .blog-content h5, .blog-content h6 {
+  margin: 35px 0 20px;
+  font-size: 18px;
 }
 
 .blog-tag {
@@ -941,10 +954,10 @@ a:hover {
   .content {
     width: 100%;
   }
-  p {
+  /* p {
     font-size: 18px;
     line-height: 27.8px;
-  }
+  } */
   .wrapper {
     padding-right: 15px;
     padding-left: 15px;

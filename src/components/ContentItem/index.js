@@ -6,11 +6,10 @@ import TopProfile from '../TopProfile'
 import HighlightHeader from '../HighlightHeader'
 import Icon from '../Icon'
 
-function onChange (isVisible, icon, contentItemClass) {
+function onChange (isVisible, contentItemClass) {
   if (isVisible) {
     document.querySelector(`.${contentItemClass} .item-safe-wrapper`).classList.add('fade-in')
     document.querySelector(`.${contentItemClass} .item-content h1`).classList.add('animate-highlight-text-right')
-    // add correct icon burst class
     document.querySelector(`.${contentItemClass} .item-icon .item-icon-base`).classList.add('has-bursted')
   }
 }
@@ -27,7 +26,7 @@ const ContentItem = ({ icon, children }) => {
         <div className="item-content">
           <VisibilitySensorWithOffset
             offset={100}
-            onChange={(isVisible) => onChange(isVisible, icon, contentItemClass)}
+            onChange={(isVisible) => onChange(isVisible, contentItemClass)}
           />
           {children}
         </div>
