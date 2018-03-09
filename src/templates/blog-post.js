@@ -5,7 +5,6 @@ import { DateAndTags } from '../components/BlogPost'
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
-  console.log(post)
   return (
     <div className="blog-wrapper">
       <Helmet title={`Nick Zuber -- ${post.frontmatter.title}`} />

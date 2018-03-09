@@ -14,6 +14,7 @@ import SocialSheet from '../../img/sheets/sprite-sheet-helmet.png'
 
 import RobinSheet from '../../img/sheets/sprite-sheet-robin.png'
 import BoxSheet from '../../img/sheets/sprite-sheet-box.png'
+import VerandaSheet from '../../img/sheets/sprite-sheet-veranda.png'
 import UmlSheet from '../../img/sheets/sprite-sheet-uml.png'
 
 function getIcon (t) {
@@ -35,6 +36,7 @@ function getIcon (t) {
     case 'box':
       return BoxSheet
     case 'veranda':
+      return VerandaSheet
     case 'uml':
       return UmlSheet
     default:

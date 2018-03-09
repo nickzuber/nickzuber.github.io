@@ -23,7 +23,10 @@ const DateSubtitle = ({ children }) =>
   </span>
 
 const Company = ({ color, title, place }) => {
-  const windowSize = window.outerWidth
+  let windowSize = Infinity
+  if (typeof window !== `undefined`) {
+    windowSize = window.outerWidth
+  }
   const words = title.split(' ')
   let totalTitleList = []
 
