@@ -706,9 +706,11 @@ svg.work-line {
   width: 50px;
 }
 .work-title {
-  margin: 25px 0 12px -10px;
+  display: inline-block;
+  margin: 0 0 -1px -10px;
   margin-right: -10px;
   padding: 0 10px;
+  line-height: 1.333em;
   border-radius: 4px;
 }
 
@@ -917,7 +919,7 @@ a:hover {
   margin: 15px 0 50px;
 }
 .blog-content p {
-  margin: 10px 0;
+  margin: 10px 0 20px;
 }
 .blog-content h2 {
   margin: 35px 0 20px;
@@ -954,10 +956,10 @@ a:hover {
   .content {
     width: 100%;
   }
-  /* p {
-    font-size: 18px;
+  p {
+    font-size: 17px;
     line-height: 27.8px;
-  } */
+  }
   .wrapper {
     padding-right: 15px;
     padding-left: 15px;
@@ -973,5 +975,8 @@ a:hover {
     height: 90%;
     left: 0;
     top: 40px;
+  }
+  .blog-posts, .blog-wrapper {
+    padding: 0 10px;
   }
 }

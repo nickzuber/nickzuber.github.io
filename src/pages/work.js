@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 import TopProfile from '../components/TopProfile'
 import WorkItem from '../components/WorkItem'
 
+const MAX_SINGLE_LINE_WIDTH = 550
+
 const curve1 = "M 80 40 Q 100 80 80 120 Q 60 160 80 200"
 const curve2 = "M 80 40 Q 60 80 80 120 Q 100 160 80 200"
 const curve3 = "M 80 40 Q 60 80 100 160 Q 100 160 80 200"
@@ -20,13 +22,39 @@ const DateSubtitle = ({ children }) =>
     {children}
   </span>
 
-const Company = ({ color, title, place }) =>
-  <h1 style={{ lineHeight: '1.1em' }}>
-    <span className="work-title">{title}</span> <br /> <span style={{
-      fontSize: '80%',
-      fontWeight: '500'
-    }}>at <span style={{ color: `${color}` }}>{place}</span></span>
-  </h1>
+const Company = ({ color, title, place }) => {
+  const windowSize = window.outerWidth
+  const words = title.split(' ')
+  let totalTitleList = []
+
+  // split the title into parts if window is narrow
+  if (words.length < MAX_SINGLE_LINE_WIDTH &&
+      windowSize < MAX_SINGLE_LINE_WIDTH) {
+    let curTitleList = []
+    for (let i = 0; i < words.length; i++) {
+      if (curTitleList.length === 2) {
+        totalTitleList.push(curTitleList.join(' '))
+        curTitleList = []
+      }
+      curTitleList.push(words[i])
+    }
+    if (curTitleList.length > 0) {
+      totalTitleList.push(curTitleList.join(' '))
+    }
+  } else {
+    totalTitleList.push(title)
+  }
+  console.log(totalTitleList)
+  return (
+    <h1 style={{ lineHeight: '1.1em' }}>
+      {totalTitleList.map(title => <span id={title} className="work-title">{title}</span>)}
+      <br /> <span style={{
+        fontSize: '80%',
+        fontWeight: '500'
+      }}>at <span style={{ color: `${color}` }}>{place}</span></span>
+    </h1>
+  )
+}
 
 const WorkPage = () => (
   <div style={{textAlign: 'center' }}>

@@ -7,7 +7,11 @@ import Icon from '../Icon'
 function onChange (isVisible, contentItemClass) {
   if (isVisible) {
     document.querySelector(`.${contentItemClass} .work-safe-wrapper`).classList.add('fade-in')
-    document.querySelector(`.${contentItemClass} .work-right h1 .work-title`).classList.add('animate-highlight-text-right')
+
+    for (let i = 0; i < document.querySelectorAll(`.${contentItemClass} .work-right h1 .work-title`).length; i++) {
+      document.querySelectorAll(`.${contentItemClass} .work-right h1 .work-title`)[i].classList.add('animate-highlight-text-right')
+    }
+
     document.querySelector(`.${contentItemClass} .work-left .item-icon-base`).classList.add('has-bursted')
     let maybeLine = document.querySelector(`.${contentItemClass} .work-left .work-line`)
     maybeLine ? maybeLine.classList.add('fade-in') : null
