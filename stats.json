@@ -1,0 +1,110 @@
+{
+  "assetsByChunkName": {
+    "path---sprite-sheet": [
+      "path---sprite-sheet-a0e39f21c11f6a62c5ab.js",
+      "path---sprite-sheet-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-work-js": [
+      "component---src-pages-work-js-9048bad0912cde9c5698.js",
+      "component---src-pages-work-js-9048bad0912cde9c5698.js.map"
+    ],
+    "path---blog-continuations-and-javascript": [
+      "path---blog-continuations-and-javascript-5b48a3fb0a41d6ee7192.js",
+      "path---blog-continuations-and-javascript-5b48a3fb0a41d6ee7192.js.map"
+    ],
+    "path---work": [
+      "path---work-a0e39f21c11f6a62c5ab.js",
+      "path---work-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-a30ca923a3acad96be3e.js",
+      "component---src-pages-index-js-a30ca923a3acad96be3e.js.map"
+    ],
+    "path---blog": [
+      "path---blog-0b96b7389e0c24135fca.js",
+      "path---blog-0b96b7389e0c24135fca.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---blog-programming-language-parsing": [
+      "path---blog-programming-language-parsing-c55d8b59df938a539488.js",
+      "path---blog-programming-language-parsing-c55d8b59df938a539488.js.map"
+    ],
+    "component---src-pages-sprite-sheet-js": [
+      "component---src-pages-sprite-sheet-js-bd6d4429ab533b32928a.js",
+      "component---src-pages-sprite-sheet-js-bd6d4429ab533b32928a.js.map"
+    ],
+    "component---src-templates-blog-post-js": [
+      "component---src-templates-blog-post-js-4ad20cc1721241565ac4.js",
+      "component---src-templates-blog-post-js-4ad20cc1721241565ac4.js.map"
+    ],
+    "path---blog-automated-memory-management": [
+      "path---blog-automated-memory-management-a370494dc4f2f51441a4.js",
+      "path---blog-automated-memory-management-a370494dc4f2f51441a4.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-e7b69f30a79f2c7eb397.js",
+      "component---src-layouts-index-js-e7b69f30a79f2c7eb397.js.map"
+    ],
+    "path---blog-javascript-shallow-dive": [
+      "path---blog-javascript-shallow-dive-c1c53412824166869fc4.js",
+      "path---blog-javascript-shallow-dive-c1c53412824166869fc4.js.map"
+    ],
+    "path---index": [
+      "path---index-9cf00fba84ce66e582c3.js",
+      "path---index-9cf00fba84ce66e582c3.js.map"
+    ],
+    "path---blog-exploring-lda-classification": [
+      "path---blog-exploring-lda-classification-837038995ee58956c3d8.js",
+      "path---blog-exploring-lda-classification-837038995ee58956c3d8.js.map"
+    ],
+    "path---blog-rolling-hash": [
+      "path---blog-rolling-hash-d1a52fb26fd41e304b83.js",
+      "path---blog-rolling-hash-d1a52fb26fd41e304b83.js.map"
+    ],
+    "component---src-pages-resume-js": [
+      "component---src-pages-resume-js-d59fad362ea77605cbc0.js",
+      "component---src-pages-resume-js-d59fad362ea77605cbc0.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-fe130e10820469b039f7.js",
+      "component---src-pages-404-js-fe130e10820469b039f7.js.map"
+    ],
+    "commons": [
+      "commons-ccd1e77b613675f4b343.js",
+      "commons-ccd1e77b613675f4b343.js.map"
+    ],
+    "path---blog-what-is-ocaml": [
+      "path---blog-what-is-ocaml-0446d0b1880d6f6620c3.js",
+      "path---blog-what-is-ocaml-0446d0b1880d6f6620c3.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---blog-type-systems": [
+      "path---blog-type-systems-3c298c1e1b0731fe0b4a.js",
+      "path---blog-type-systems-3c298c1e1b0731fe0b4a.js.map"
+    ],
+    "component---src-pages-blog-js": [
+      "component---src-pages-blog-js-5231fee6b89654f78668.js",
+      "component---src-pages-blog-js-5231fee6b89654f78668.js.map"
+    ],
+    "path---resume": [
+      "path---resume-a0e39f21c11f6a62c5ab.js",
+      "path---resume-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-741918a988f216c57a6e.js",
+      "build-js-styles.css",
+      "app-741918a988f216c57a6e.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
