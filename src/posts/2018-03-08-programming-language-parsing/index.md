@@ -38,7 +38,7 @@ We can recognize that the amount of work the parser needs to do is directly rela
 
 To visualize a simple example of this, consider the raw string of "3 + (5 + 4)". A simple lexer might consider the open and close parentheses to be their own tokens, however the parser might need to know what the contents are in between two parentheses. This ends up making the parser do more work to figure out what all the tokens are in between the open and close parentheses before it can continue parsing which could affect the speed at which the parser operates. Now, if the lexer was able to generate a smarter token that had already done the work of combining the inner contents of the parentheses, then the parser wouldn't have to worry about doing that work itself.
 
-<img src="../img/posts/token.png" />
+<img src="../posts/token.png" />
 
 Of course, this comes with a trade off -- the lexer now is required to do more work in order to condense the tokens. In some cases, the amount of work doesn't change -- instead of the parser doing it, now the lexer does. However, it is possible for this process be simpler and more efficient to be done by the lexer since the parser can oftentimes be trying to interpret tokens and will end up wasting time trying to group them together first. So long as the time at which the lexer operates isn't slowed down, it can be worthwhile to compound tokens in this way if it means it will reduce the amount of work the parser needs to do.
 
@@ -56,7 +56,7 @@ Efficient parsers are often developed using either the top-down or bottom-up app
 
 A simple way to think about top-down parsing is finding the leftmost derivation of some input by scanning from left to right. Most approaches that involve a top-down technique implement some form of recursive decent. Recursive decent is when a collection of recursive procedures are imposed on the input in order to process the data. In a naive implementation, this approach can lead to many cases of backtracking where we explore each possible path for a nonterminal production rule and try to find matches. If a production rule that we consider turns out to not be the correct path, we need to recursively backtrack and try the next path.
 
-<img src="../img/posts/top-down.png" />
+<img src="../posts/top-down.png" />
 
 Since backtracking is inherently slow relative to linear parsing, there are ways to avoid it in recursive decent using a technique called predictive parsing. Predictive parsing works by predicting which production rule is going to be used next when analyzing some input. However, this comes at a slight cost -- instead of moving backwards when making an incorrect move, we look forward into the input and make sure we make the correct move.
 
@@ -80,7 +80,7 @@ Despite having to spend time looking ahead at a certain amount of tokens, this p
 
 The bottom-up approach to parsing can be thought of as almost the opposite of top-down; it attempts to construct the rightmost derivation of some input in reverse. By reverse, it's meant that we invert the production rules such that we begin with the terminals and replace them with the left side of a production rule. So given some input, we decide on a terminal to begin with and then start running production rules backwards until we finish at the start symbol.
 
-<img src="../img/posts/bottom-up.png" />
+<img src="../posts/bottom-up.png" />
 
 ## Closing
 

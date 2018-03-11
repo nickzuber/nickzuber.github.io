@@ -720,7 +720,7 @@ svg.work-line {
 
 @keyframes hover {
   0% { transform: translateY(0px); }
-  50% { transform: translateY(5px); }
+  50% { transform: translateY(10px); }
   100% { transform: translateY(0px); }
 }
 
@@ -754,14 +754,10 @@ svg.work-line {
   transform: translate3d(0, 0, 0);
   background-position: right;
   background-size: 2900%;
-  height: 140px;
-  width: 140px;
+  height: 140px;  /* ~150px is ideal, but that causes visual render glitch */
+  width: 140px;   /* on iPhone 8 and below for some reason. 140px seems fine. */
   top: -20px;
   left: -45px;
-  /* top: -25px;
-  left: -50px;
-  height: 150px;
-  width: 150px; */
 }
 
 .header-section a {
@@ -799,7 +795,7 @@ svg.work-line {
   background-repeat: no-repeat;
   background-size: 2900%;
   position: absolute;
-  z-index: 1;   /* Let image particles spilled over header (cool) */
+  z-index: 1;
   top: -75px;
   left: 50%;
   margin-left: -125px;
@@ -861,7 +857,7 @@ svg {
 }
 
 .animate-highlight-text-right {
-  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #fbe9a3 50%);
+  /* background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #fbe9a3 50%); */
   background-position: 0% 0;
   background-size: 200% auto;
   animation: slide-highlight-right .3s cubic-bezier(1.000, 0.005, 0.825, 0.455) 1;

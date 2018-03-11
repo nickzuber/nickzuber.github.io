@@ -37,7 +37,7 @@ const IndexPage = ({ data }) => {
 
       <ContentItem icon="travel">
         <h1>Where I've been</h1>
-        <p>Over the years, I've had the privilege of <Link to="/work/">working for some amazing companies and organizations</Link>. Here's a small overview on where I've been recently.</p>
+        <p>Over the years, I've had the privilege of <Link to="/career/">working for some amazing companies and organizations</Link>. Here's a small overview on where I've been recently.</p>
       </ContentItem>
     </div>
   )

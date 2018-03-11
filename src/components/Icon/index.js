@@ -13,6 +13,7 @@ import TravelSheet from '../../img/sheets/sprite-sheet-luggage.png'
 import SocialSheet from '../../img/sheets/sprite-sheet-helmet.png'
 
 import WrenchSheet from '../../img/sheets/sprite-sheet-wrench.png'
+import CapSheet from '../../img/sheets/sprite-sheet-cap.png'
 
 function getIcon (t) {
   switch (t) {
@@ -30,6 +31,8 @@ function getIcon (t) {
       return TravelSheet
     case 'wrench':
       return WrenchSheet
+    case 'cap':
+      return CapSheet
     default:
       return RobinSheet
   }

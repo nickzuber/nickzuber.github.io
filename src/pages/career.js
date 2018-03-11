@@ -102,14 +102,25 @@ const WorkPage = () => (
       <p>Led a small team of developers and created a wholesale ordering platform. Worked with PHP and MySQL to build out relational databases and user interfaces.</p>
     </WorkItem>
 
-    <WorkItem icon="wrench" d={curve1} isLast={true}>
+    <WorkItem icon="wrench" d={curve1}>
       <Company
         title="Freelance Software Engineer"
         color="#0468b1"
-        place="Umass Lowell"
+        place="University of Massachuetts Lowell"
       />
       <DateSubtitle>February 2015 — June 2015</DateSubtitle>
       <p>Teamed up with staff to build and design a web app to help automate the class scheduling process at my university. Worked with JavaScript and efficient algorithms to develop an optimized platform.</p>
+    </WorkItem>
+
+
+    <WorkItem icon="cap" d={curve1} isLast={true}>
+      <Company
+        title="Started College"
+        color="#0468b1"
+        place="University of Massachuetts Lowell"
+      />
+      <DateSubtitle>September 2014</DateSubtitle>
+      <p>Started attending college majoring in Computer Science with a minor is Mathematics. </p>
     </WorkItem>
   </div>
 )
