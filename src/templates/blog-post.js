@@ -7,10 +7,10 @@ export default function Template({ data }) {
   const { markdownRemark: post } = data
   return (
     <div className="blog-wrapper">
-      <Helmet title={`Nick Zuber -- ${post.frontmatter.title}`} />
+      <Helmet title={`Nick Zuber — ${post.frontmatter.title}`} />
       <div className="blog-post">
         <h1 style={{ margin: '2px 0 0', padding: '0' }}>{post.frontmatter.title}</h1>
-        <DateAndTags tags={post.frontmatter.tags}>Nick Zuber — {post.frontmatter.date}</DateAndTags>
+        <DateAndTags tags={post.frontmatter.tags}>{post.frontmatter.date}</DateAndTags>
         <div
           className="blog-content"
           dangerouslySetInnerHTML={{ __html: post.html }}

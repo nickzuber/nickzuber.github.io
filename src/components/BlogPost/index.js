@@ -71,7 +71,7 @@ const BlogPost = ({ title, path, tags, date, desc }) => (
   }}>
     <Link to={path}>
       <Title>{title}</Title>
-      <DateAndTags tags={tags}>Nick Zuber — {date}</DateAndTags>
+      <DateAndTags tags={tags}>{date}</DateAndTags>
       <Description>{desc}</Description>
     </Link>
   </div>
