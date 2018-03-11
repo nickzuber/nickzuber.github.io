@@ -4,21 +4,17 @@
       "path---sprite-sheet-a0e39f21c11f6a62c5ab.js",
       "path---sprite-sheet-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "component---src-pages-work-js": [
-      "component---src-pages-work-js-7c06aaa9264e55e97e26.js",
-      "component---src-pages-work-js-7c06aaa9264e55e97e26.js.map"
-    ],
     "path---blog-continuations-and-javascript": [
       "path---blog-continuations-and-javascript-5b48a3fb0a41d6ee7192.js",
       "path---blog-continuations-and-javascript-5b48a3fb0a41d6ee7192.js.map"
     ],
-    "path---work": [
-      "path---work-a0e39f21c11f6a62c5ab.js",
-      "path---work-a0e39f21c11f6a62c5ab.js.map"
-    ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-87130fd2b4744e457829.js",
-      "component---src-pages-index-js-87130fd2b4744e457829.js.map"
+      "component---src-pages-index-js-2f79023f5160c0976fb0.js",
+      "component---src-pages-index-js-2f79023f5160c0976fb0.js.map"
+    ],
+    "component---src-pages-career-js": [
+      "component---src-pages-career-js-deea71b8923091a01072.js",
+      "component---src-pages-career-js-deea71b8923091a01072.js.map"
     ],
     "path---blog": [
       "path---blog-0b96b7389e0c24135fca.js",
@@ -29,12 +25,16 @@
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---blog-programming-language-parsing": [
-      "path---blog-programming-language-parsing-c55d8b59df938a539488.js",
-      "path---blog-programming-language-parsing-c55d8b59df938a539488.js.map"
+      "path---blog-programming-language-parsing-273e06fa23932ac0d5ff.js",
+      "path---blog-programming-language-parsing-273e06fa23932ac0d5ff.js.map"
     ],
     "component---src-pages-sprite-sheet-js": [
-      "component---src-pages-sprite-sheet-js-f674b79d581a7b462dd1.js",
-      "component---src-pages-sprite-sheet-js-f674b79d581a7b462dd1.js.map"
+      "component---src-pages-sprite-sheet-js-4d68573d0294531319be.js",
+      "component---src-pages-sprite-sheet-js-4d68573d0294531319be.js.map"
+    ],
+    "path---career": [
+      "path---career-a0e39f21c11f6a62c5ab.js",
+      "path---career-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-templates-blog-post-js": [
       "component---src-templates-blog-post-js-4ad20cc1721241565ac4.js",
@@ -45,8 +45,8 @@
       "path---blog-automated-memory-management-a370494dc4f2f51441a4.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-e7b69f30a79f2c7eb397.js",
-      "component---src-layouts-index-js-e7b69f30a79f2c7eb397.js.map"
+      "component---src-layouts-index-js-afe667930a5382468b64.js",
+      "component---src-layouts-index-js-afe667930a5382468b64.js.map"
     ],
     "path---blog-javascript-shallow-dive": [
       "path---blog-javascript-shallow-dive-c1c53412824166869fc4.js",
@@ -97,9 +97,9 @@
       "path---resume-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-741918a988f216c57a6e.js",
+      "app-e7f638aa2e0f1e32aa3d.js",
       "build-js-styles.css",
-      "app-741918a988f216c57a6e.js.map",
+      "app-e7f638aa2e0f1e32aa3d.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
