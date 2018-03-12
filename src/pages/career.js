@@ -120,7 +120,7 @@ const WorkPage = () => (
         place="University of Massachuetts Lowell"
       />
       <DateSubtitle>September 2014</DateSubtitle>
-      <p>Started attending college majoring in Computer Science with a minor is Mathematics. </p>
+      <p>Started attending college majoring in Computer Science with a minor in Mathematics.</p>
     </WorkItem>
   </div>
 )

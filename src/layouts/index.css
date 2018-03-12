@@ -857,7 +857,7 @@ svg {
 }
 
 .animate-highlight-text-right {
-  /* background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #fbe9a3 50%); */
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #fbe9a3 50%);
   background-position: 0% 0;
   background-size: 200% auto;
   animation: slide-highlight-right .3s cubic-bezier(1.000, 0.005, 0.825, 0.455) 1;
@@ -867,8 +867,8 @@ svg {
 }
 
 @keyframes slide-highlight-right {
-  from {background-position: 0% 0;}
-  to { background-position: -100% 0;}
+  from { background-position: 0% 0; }
+  to { background-position: -100% 0; }
 }
 
 p {
