@@ -49,7 +49,7 @@ const Company = ({ color, title, place }) => {
   }
   return (
     <h1 style={{ lineHeight: '1.1em' }}>
-      {totalTitleList.map(title => <span id={title} className="work-title">{title}</span>)}
+      {totalTitleList.map(title => <span key={title} className="work-title">{title}</span>)}
       <br /> <span style={{
         fontSize: '80%',
         fontWeight: '500'

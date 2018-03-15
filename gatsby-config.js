@@ -38,5 +38,7 @@ module.exports = {
           windows: false
         }
       }
-    }],
+    },
+    'gatsby-plugin-offline'
+  ],
 };
