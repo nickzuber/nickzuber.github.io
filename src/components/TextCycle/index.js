@@ -44,6 +44,8 @@ class TextCycle extends React.Component {
         <ul style={{ marginTop: this.getMarginOffsetFromItem(this.state.item) }}>
           <li>Parsers</li>
           <li>ReasonML</li>
+          <li>React</li>
+          <li>Node</li>
           <li>JavaScript</li>
           <li>PL Design</li>
           <li>Compilers</li>
