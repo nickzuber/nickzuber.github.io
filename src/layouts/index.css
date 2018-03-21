@@ -752,7 +752,7 @@ svg.work-line {
   /* for bursting */
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  background-position: right;
+  background-position: left;
   background-size: 2900%;
   height: 140px;  /* ~150px is ideal, but that causes visual render glitch */
   width: 140px;   /* on iPhone 8 and below for some reason. 140px seems fine. */
@@ -799,6 +799,18 @@ svg.work-line {
   top: -75px;
   left: 50%;
   margin-left: -125px;
+}
+
+.profile-static {
+  margin: 0 auto;
+  height: 110px;
+  width: 110px;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 140%;
+  position: relative;
+  z-index: 1;
 }
 
 .has-bursted {
@@ -850,14 +862,14 @@ svg {
 }
 
 .item-safe-wrapper, .work-safe-wrapper {
-  opacity: .1;
+  opacity: 1;  /* `0.1` for fade in */
   transition: opacity .3s ease-in;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 .animate-highlight-text-right {
-  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #fbe9a3 50%);
+  /* background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #fbe9a3 50%); */
   background-position: 0% 0;
   background-size: 200% auto;
   animation: slide-highlight-right .3s cubic-bezier(1.000, 0.005, 0.825, 0.455) 1;

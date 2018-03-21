@@ -1,8 +1,9 @@
 
 import React from 'react'
 import ProfileSheet from '../../img/sheets/sprite-sheet-profile.png'
+import ProfileStatic from '../../img/me.jpg'
 
-const Profile = () => (
+const AnimatedProfile = () => (
   <div
     style={{
       position: 'relative',
@@ -17,4 +18,19 @@ const Profile = () => (
   </div>
 )
 
-export default Profile
+const StaticProfile = () => (
+  <div
+    style={{
+      position: 'relative',
+      height: '110px',
+      margin: '0 auto 10px'
+    }}
+  >
+    <div
+      style={{backgroundImage: `url(${ProfileStatic})`}}
+      className="profile-static"
+    />
+  </div>
+)
+
+export default StaticProfile

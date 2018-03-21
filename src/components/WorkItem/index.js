@@ -23,7 +23,7 @@ const SvgDashedLine = ({ d }) =>
     <g fill="none" fillRule="evenodd">
       <path
         strokeWidth="2"
-        stroke="rgba(50, 77, 90, 0.25)"
+        stroke="rgba(50, 77, 90, 0.15)"
         strokeLinecap="round"
         strokeDasharray="15, 10, 5, 10, 15"
         d={d}
