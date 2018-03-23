@@ -51,6 +51,8 @@ class TextCycle extends React.Component {
           <li>Compilers</li>
           <li>Types</li>
           <li>OCaml</li>
+          <li>Verification</li>
+          <li>Coq</li>
         </ul>
       </div>
     );
