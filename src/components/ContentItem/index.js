@@ -25,7 +25,7 @@ const ContentItem = ({ icon, children }) => {
         </div>
         <div className="item-content">
           <VisibilitySensorWithOffset
-            offset={75}
+            offset={25}
             onChange={(isVisible) => onChange(isVisible, contentItemClass)}
           />
           {children}

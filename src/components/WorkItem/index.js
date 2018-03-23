@@ -46,7 +46,7 @@ const WorkBlock = ({ d, icon, children, ...props }) => {
         </div>
         <div className="work-right">
           <VisibilitySensorWithOffset
-            offset={75}
+            offset={25}
             onChange={(isVisible) => onChange(isVisible, workBlockClass)}
           />
           {children}
