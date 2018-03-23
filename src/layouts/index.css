@@ -757,7 +757,7 @@ svg.work-line {
   height: 140px;  /* ~150px is ideal, but that causes visual render glitch */
   width: 140px;   /* on iPhone 8 and below for some reason. 140px seems fine. */
   top: -20px;
-  left: -45px;
+  left: -40px;
 }
 
 .header-section a {
