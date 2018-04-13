@@ -15,26 +15,35 @@ import SocialSheet from '../../img/sheets/sprite-sheet-helmet.png'
 import WrenchSheet from '../../img/sheets/sprite-sheet-wrench.png'
 import CapSheet from '../../img/sheets/sprite-sheet-cap.png'
 
+import DrawnBox from '../../img/drawn/box.png'
+import DrawnBoxSheet from '../../img/drawn/sprite-sheet-box.png'
+import DrawnPaperSheet from '../../img/drawn/sprite-sheet-paper.png'
+import DrawnMapSheet from '../../img/drawn/sprite-sheet-map.png'
+import DrawnLaptopSheet from '../../img/drawn/sprite-sheet-laptop.png'
+import DrawnBookSheet from '../../img/drawn/sprite-sheet-book.png'
+import DrawnCoffeeSheet from '../../img/drawn/sprite-sheet-coffee.png'
+import DrawnSchoolSheet from '../../img/drawn/sprite-sheet-school.png'
+
 function getIcon (t) {
   switch (t) {
     case 'laptop':
-      return LaptopSheet
+      return DrawnLaptopSheet
     case 'heart':
-      return HeartSheet
+      return DrawnCoffeeSheet
     case 'pencil':
-      return PencilSheet
+      return DrawnBookSheet
     case 'letter':
-      return LetterSheet
+      return DrawnPaperSheet
     case 'social':
-      return SocialSheet
+      return DrawnMapSheet
     case 'travel':
-      return TravelSheet
+      return DrawnBoxSheet
     case 'wrench':
-      return WrenchSheet
+      return DrawnLaptopSheet
     case 'cap':
-      return CapSheet
+      return DrawnSchoolSheet
     default:
-      return RobinSheet
+      return DrawnBoxSheet
   }
 }
 

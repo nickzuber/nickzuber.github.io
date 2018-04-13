@@ -688,8 +688,8 @@ pre tt:after {
 svg.work-line {
   position: absolute;
   height: 85%;
-  left: 11px;
-  top: 50px;
+  left: 17px;
+  top: 55px;
 }
 .work-line {
   opacity: 0;
@@ -754,10 +754,10 @@ svg.work-line {
   transform: translate3d(0, 0, 0);
   background-position: left;
   background-size: 2900%;
-  height: 140px;  /* ~150px is ideal, but that causes visual render glitch */
-  width: 140px;   /* on iPhone 8 and below for some reason. 140px seems fine. */
-  top: -20px;
-  left: -40px;
+  height: 160px;  /* ~150px is ideal, but that causes visual render glitch */
+  width: 160px;   /* on iPhone 8 and below for some reason. 140px seems fine. */
+  top: -25px;
+  left: -45px;
 }
 
 .header-section a {
@@ -924,6 +924,17 @@ a:hover {
   text-align: left;
 }
 
+.repo-circle {
+  content: "";
+  display: inline-block;
+  background: red;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+  top: 1px;
+}
+
 /* Blog stuff */
 .blog-wrapper {
   max-width: 640px !important;
@@ -986,7 +997,7 @@ a:hover {
   }
   svg.work-line {
     height: 90%;
-    left: 0;
+    left: 9px !important;
     top: 40px;
   }
   .blog-posts, .blog-wrapper {
