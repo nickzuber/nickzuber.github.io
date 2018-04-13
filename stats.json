@@ -9,12 +9,12 @@
       "path---blog-continuations-and-javascript-5b48a3fb0a41d6ee7192.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-fc66a62448a2852f28ea.js",
-      "component---src-pages-index-js-fc66a62448a2852f28ea.js.map"
+      "component---src-pages-index-js-f7d61119fb9cb27df8f6.js",
+      "component---src-pages-index-js-f7d61119fb9cb27df8f6.js.map"
     ],
     "component---src-pages-career-js": [
-      "component---src-pages-career-js-e13809a93bb7b1516222.js",
-      "component---src-pages-career-js-e13809a93bb7b1516222.js.map"
+      "component---src-pages-career-js-1fc6e067746fd959ff58.js",
+      "component---src-pages-career-js-1fc6e067746fd959ff58.js.map"
     ],
     "path---blog": [
       "path---blog-0b96b7389e0c24135fca.js",
@@ -29,28 +29,32 @@
       "path---blog-programming-language-parsing-273e06fa23932ac0d5ff.js.map"
     ],
     "component---src-pages-sprite-sheet-js": [
-      "component---src-pages-sprite-sheet-js-4d68573d0294531319be.js",
-      "component---src-pages-sprite-sheet-js-4d68573d0294531319be.js.map"
+      "component---src-pages-sprite-sheet-js-53722e35fe35037b5556.js",
+      "component---src-pages-sprite-sheet-js-53722e35fe35037b5556.js.map"
     ],
     "path---career": [
       "path---career-a0e39f21c11f6a62c5ab.js",
       "path---career-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---projects": [
+      "path---projects-a0e39f21c11f6a62c5ab.js",
+      "path---projects-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-6ecdf63aff2cdb68e30b.js",
-      "component---src-templates-blog-post-js-6ecdf63aff2cdb68e30b.js.map"
+      "component---src-templates-blog-post-js-4cbbc2269a5f1d56257a.js",
+      "component---src-templates-blog-post-js-4cbbc2269a5f1d56257a.js.map"
     ],
     "path---blog-automated-memory-management": [
       "path---blog-automated-memory-management-a370494dc4f2f51441a4.js",
       "path---blog-automated-memory-management-a370494dc4f2f51441a4.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-afe667930a5382468b64.js",
-      "component---src-layouts-index-js-afe667930a5382468b64.js.map"
+      "component---src-layouts-index-js-e929c251f7e4b6b35301.js",
+      "component---src-layouts-index-js-e929c251f7e4b6b35301.js.map"
     ],
     "path---blog-javascript-shallow-dive": [
       "path---blog-javascript-shallow-dive-c1c53412824166869fc4.js",
@@ -77,8 +81,8 @@
       "component---src-pages-404-js-fe130e10820469b039f7.js.map"
     ],
     "commons": [
-      "commons-94082c71b9e79fd7e633.js",
-      "commons-94082c71b9e79fd7e633.js.map"
+      "commons-6c1ef951b0db17ba7fcd.js",
+      "commons-6c1ef951b0db17ba7fcd.js.map"
     ],
     "path---blog-what-is-ocaml": [
       "path---blog-what-is-ocaml-0446d0b1880d6f6620c3.js",
@@ -100,14 +104,18 @@
       "component---src-pages-blog-js-0b1eb6ffb7fd6b68bad2.js",
       "component---src-pages-blog-js-0b1eb6ffb7fd6b68bad2.js.map"
     ],
+    "component---src-pages-projects-js": [
+      "component---src-pages-projects-js-9dd95ed9ac1857e00056.js",
+      "component---src-pages-projects-js-9dd95ed9ac1857e00056.js.map"
+    ],
     "path---resume": [
       "path---resume-a0e39f21c11f6a62c5ab.js",
       "path---resume-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-54e3e7dc99be969b76df.js",
+      "app-f397964a87246f602e93.js",
       "build-js-styles.css",
-      "app-54e3e7dc99be969b76df.js.map",
+      "app-f397964a87246f602e93.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
