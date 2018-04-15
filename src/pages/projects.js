@@ -766,7 +766,7 @@ const WorkPage = () => (
         fontSize: '90%',
         opacity: .5,
       }}>
-        {repo.stars.toLocaleString()} star{repo.stars > 1 ? 's' : ''}, {repo.forks.toLocaleString()} fork{repo.forks > 1 ? 's' : ''}
+        {repo.stars.toLocaleString()} star{repo.stars == 1 ? '' : 's'}, {repo.forks.toLocaleString()} fork{repo.forks == 1 ? '' : 's'}
       </span><br />
       {repo.description + endSentence(repo.description)}</p>
     )}
