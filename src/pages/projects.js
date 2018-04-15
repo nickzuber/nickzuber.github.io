@@ -753,7 +753,7 @@ const WorkPage = () => (
 
   <ContentItem icon="cap">
     <h1>Open Source Projects</h1>
-    <p style={{ marginBottom: 0 }}>In my spare time, I love working on open source and getting involved in the different communities. Here's a list of projects that I'm either <a href="https://github.com/nickzuber">actively working on</a>, <a href="https://github.com/nickzuber?utf8=%E2%9C%93&tab=repositories&q=&type=fork&language=">helping out with</a>, or <a href="https://github.com/nickzuber?utf8=%E2%9C%93&tab=repositories&q=&type=fork&language=">interested in</a>.</p>
+    <p style={{ marginBottom: 0 }}>In my spare time, I love working on open source and getting involved in the different communities. Here's a list of projects that I'm either <a href="https://github.com/nickzuber">actively working on</a>, <a href="https://github.com/nickzuber?tab=repositories">have worked on</a>, <a href="https://github.com/nickzuber?utf8=%E2%9C%93&tab=repositories&q=&type=fork&language=">helping out with</a>, or <a href="https://github.com/nickzuber?utf8=%E2%9C%93&tab=repositories&q=&type=fork&language=">interested in</a>.</p>
 
     {repositories.sort(byStars).map(repo => 
       <p key={repo.name} style={{
