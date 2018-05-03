@@ -772,6 +772,13 @@ svg.work-line {
   padding: 30px 15px;
   margin: 0;
 }
+.header-section a.not-btn-active {
+  color: #2d99d3;
+}
+.header-section a.not-btn-active:hover {
+  opacity: 1;
+  cursor: default;
+}
 .header-section a.btn {
   margin: 10px;
   color: #fff;
@@ -785,6 +792,10 @@ svg.work-line {
   text-decoration: none;
   text-align: center;
   line-height: 100%;
+}
+.header-section a.btn-active {
+  opacity: 1;
+  cursor: default;
 }
 
 .profile {

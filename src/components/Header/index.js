@@ -16,11 +16,11 @@ const Header = () => (
         boxSizing: 'border-box',
       }}
     >
-      <Link className='not-btn' to="/">Home</Link>
-      <Link className='not-btn' to="/career/">Career</Link>
-      <Link className='not-btn' to="/projects/">Projects</Link>
+      <Link exact activeClassName={'not-btn-active'} className='not-btn' to="/">Home</Link>
+      <Link exact activeClassName={'not-btn-active'} className='not-btn' to="/career/">Career</Link>
+      <Link exact activeClassName={'not-btn-active'} className='not-btn' to="/projects/">Projects</Link>
       {/* <a target="_blank" className='not-btn'href='https://github.com/nickzuber'>GitHub</a> */}
-      <Link className='btn'to="/blog/">Blog</Link>
+      <Link exact activeClassName={'btn-active'} className='btn'to="/blog/">Blog</Link>
     </div>
   </div>
 )
