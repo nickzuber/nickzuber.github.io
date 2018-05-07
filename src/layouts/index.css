@@ -684,6 +684,7 @@ pre tt:after {
   width: 75px;
   text-align: center;
   position: relative;
+  z-index: -1;
 }
 svg.work-line {
   position: absolute;
