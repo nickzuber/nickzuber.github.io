@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
 
       <ContentItem icon="heart">
         <h1>Some things I've made</h1>
-        <p><a href="https://github.com/nickzuber/infrared">infrared</a>, <a href="https://github.com/nickzuber/needle">needle</a>, <a href="https://github.com/nickzuber/mark-up">markup</a>, <a href="https://github.com/nickzuber/add-reason">add-reason</a>, and <a href="https://github.com/nickzuber/doxide">doxide</a> are a few of my projects. You can find more on <a href="https://github.com/nickzuber">GitHub</a>. Some of these projects collectively have over 16K installs on <a href="https://www.npmjs.com/~nickzuber">NPM</a>.</p>
+        <p><a href="https://github.com/nickzuber/infrared">infrared</a>, <a href="https://github.com/nickzuber/kelp">kelp</a>, <a href="https://github.com/nickzuber/mark-up">markup</a>, <a href="https://github.com/nickzuber/add-reason">add-reason</a>, and <a href="https://github.com/nickzuber/needle">needle</a> are a few of my projects. You can find more on <a href="https://github.com/nickzuber">GitHub</a>. Some of these projects collectively have over 16K installs on <a href="https://www.npmjs.com/~nickzuber">NPM</a>.</p>
       </ContentItem>
 
       <ContentItem icon="pencil">

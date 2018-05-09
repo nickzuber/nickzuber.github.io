@@ -74,7 +74,18 @@ const WorkPage = () => (
       <p>I'll be rejoining the Robin engineering team to make it easier to manage your meeting rooms. Working with React, React Native, and Redux for web, iOS, and Android mobile apps.</p>
     </WorkItem>
 
-    <WorkItem icon="wrench" d={curve2}>
+    <WorkItem icon="cap" d={curve2}>
+      <Company
+        title="Graduated College"
+        color="#0468b1"
+        place="University of Massachuetts Lowell"
+        url="https://uml.edu/"
+      />
+      <DateSubtitle>May 2018</DateSubtitle>
+      <p>Recieved a bachelor's degree in Computer Science with a minor in Mathematics.</p>
+    </WorkItem>
+
+    <WorkItem icon="wrench" d={curve1}>
       <Company
         title="Software Engineering Intern"
         color="rgb(17, 82, 216)"
@@ -85,7 +96,7 @@ const WorkPage = () => (
       <p>Spent the summer working on ClusterRunner, a tool that helps run test suites in the fastest and most efficient way possible. Worked with Python and SQLite to build APIs and developer tools.</p>
     </WorkItem>
 
-    <WorkItem icon="wrench" d={curve1}>
+    <WorkItem icon="wrench" d={curve2}>
       <Company
         title="Software Engineering Intern"
         color="#EE3F46"
@@ -96,7 +107,7 @@ const WorkPage = () => (
       <p>Over the summer, I helped develop Robin's new user facing mobile app. Worked with React Native and Redux for both iOS and Android mobile apps.</p>
     </WorkItem>
 
-    <WorkItem icon="wrench" d={curve2}>
+    <WorkItem icon="wrench" d={curve1}>
       <Company
         title="Software Developer"
         color="#2cb673"
@@ -107,7 +118,7 @@ const WorkPage = () => (
       <p>Led a small team of developers and created a wholesale ordering platform. Worked with PHP and MySQL to build out relational databases and user interfaces.</p>
     </WorkItem>
 
-    <WorkItem icon="wrench" d={curve1}>
+    <WorkItem icon="wrench" d={curve2}>
       <Company
         title="Freelance Software Engineer"
         color="#0468b1"
@@ -117,7 +128,6 @@ const WorkPage = () => (
       <DateSubtitle>February 2015 — June 2015</DateSubtitle>
       <p>Teamed up with staff to build and design a web app to help automate the class scheduling process at my university. Worked with JavaScript and efficient algorithms to develop an optimized platform.</p>
     </WorkItem>
-
 
     <WorkItem icon="cap" d={curve1} isLast={true}>
       <Company
