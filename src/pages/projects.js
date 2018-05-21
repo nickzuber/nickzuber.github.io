@@ -745,8 +745,7 @@ const Circle = ({ color }) => (
 )
 
 const LanguageCircle = ({ language }) => 
-  null
-  // <Circle color={colorFromLanguage(language)} />
+  <Circle color={colorFromLanguage(language)} />
 
 const WorkPage = () => (
   <div style={{textAlign: 'center' }}>
