@@ -70,7 +70,7 @@ const WorkPage = () => (
         place="Robin"
         url="https://robinpowered.com/"
       />
-      <DateSubtitle>May 2018 — current</DateSubtitle>
+      <DateSubtitle>June 2018 — current</DateSubtitle>
       <p>I'll be rejoining the Robin engineering team to make it easier to manage your meeting rooms. Working with React, React Native, and Redux for web, iOS, and Android mobile apps.</p>
     </WorkItem>
 
@@ -88,7 +88,7 @@ const WorkPage = () => (
     <WorkItem icon="wrench" d={curve1}>
       <Company
         title="Software Engineering Intern"
-        color="rgb(17, 82, 216)"
+        color="#23a7f0"
         place="Box"
         url="https://box.com/home/"
       />
