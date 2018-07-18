@@ -24,7 +24,7 @@ class TemplateWrapper extends React.Component {
             { name: 'keywords', content: 'nick, zuber, software, engineer, nick zuber, software engineer, nickzuber' },
           ]}
         />
-        <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700" rel="stylesheet" lazyload={true} />
+        <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700" rel="stylesheet" />
         <Header />
         <div className="wrapper">
           <div className="content">

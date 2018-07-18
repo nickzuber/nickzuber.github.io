@@ -8,8 +8,8 @@ const ITEM_HEIGHT = 40.95
 class TextCycle extends React.Component {
   state = {
     maxItems: 0,
-    prevItem: 4,
-    item: 4
+    prevItem: 3,
+    item: 3
   }
 
   getMarginOffsetFromItem (item) {

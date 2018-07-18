@@ -655,7 +655,7 @@ pre tt:after {
 .content h1 {
   /* font-style: italic; */
   font-weight: 500;
-  font-size: 26px;  /* we don't want a header breaking onto next line on mobile */
+  font-size: 24px;  /* we don't want a header breaking onto next line on mobile */
   border-radius: 5px;
   /* text-transform: capitalize; */
   display: inline-block;
@@ -897,8 +897,8 @@ svg {
 }
 
 p {
-  font-size: 17px;
-  line-height: 27px;
+  font-size: 15px;
+  line-height: 25.8px;
   color: #47525d;
   font-weight: 400;
   margin-bottom: 26px;
