@@ -24,7 +24,7 @@ function getTagColor (tag) {
 const Title = ({ children }) =>
   <h1
     style={{
-      fontWeight: '600',
+      fontWeight: '500',
       fontSize: '21px',
       letterSpacing: '-0.025em',
       margin: '0px',
@@ -69,7 +69,7 @@ const BlogPost = ({ title, path, tags, date, desc }) => (
     margin: '20px 0',
     padding: '0 0 20px'
   }}>
-    <Link to={path}>
+    <Link className="blog-post-item" to={path}>
       <Title>{title}</Title>
       <DateAndTags tags={tags}>{date}</DateAndTags>
       <Description>{desc}</Description>

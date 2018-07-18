@@ -45,14 +45,14 @@ class TextCycle extends React.Component {
           <li>Parsers</li>
           <li>ReasonML</li>
           <li>React</li>
-          <li>Node</li>
+          {/* <li>Node</li> */}
           <li>JavaScript</li>
           <li>PL Design</li>
           <li>Compilers</li>
           <li>Types</li>
           <li>OCaml</li>
           <li>Verification</li>
-          <li>Coq</li>
+          {/* <li>Coq</li> */}
         </ul>
       </div>
     );

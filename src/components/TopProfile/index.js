@@ -11,7 +11,7 @@ const Header = ({ children }) =>
       // fontStyle: 'italic',
       fontWeight: '600',
       fontSize: '3em',
-      letterSpacing: '-.05em',
+      letterSpacing: '-.045em',
       margin: 0,
       display: 'inline-block',
       padding: '0 10px'
@@ -22,9 +22,9 @@ const Subheader = ({ children }) =>
     style={{
       fontWeight: '400',
       color: 'rgba(50, 77, 90, 0.35)',
-      fontSize: '1.5em',
+      fontSize: '1.6em',
       letterSpacing: '-0.02em',
-      margin: '10px auto',
+      margin: '5px auto',
       padding: '0 10px'
     }}>{children}</h2>
 

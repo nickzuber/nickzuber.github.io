@@ -1,9 +1,10 @@
-@import url('https://rsms.me/inter/inter-ui.css');
+/* @import url('https://rsms.me/inter/inter-ui.css');
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,500,700');
 
 @font-face {
   font-family: 'Larsseit';
   src: url('./fonts/Larsseit.ttf');
-}
+} */
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -12,7 +13,7 @@
 }
 html {
   font-size: 15px;
-  font-family: 'Inter UI', BlinkMacSystemFont, -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Heebo', 'Inter UI', BlinkMacSystemFont, -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #32383E;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -653,8 +654,8 @@ pre tt:after {
 }
 .content h1 {
   /* font-style: italic; */
-  font-weight: 600;
-  font-size: 23px;  /* we don't want a header breaking onto next line on mobile */
+  font-weight: 500;
+  font-size: 26px;  /* we don't want a header breaking onto next line on mobile */
   border-radius: 5px;
   /* text-transform: capitalize; */
   display: inline-block;
@@ -762,12 +763,12 @@ svg.work-line {
 }
 
 .header-section a {
-  font-size: 13px;
+  font-size: 14px;
   color: #666;
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
 }
 .header-section a.not-btn {
   padding: 30px 15px;
@@ -896,8 +897,8 @@ svg {
 }
 
 p {
-  font-size: 15px;
-  line-height: 24.8px;
+  font-size: 17px;
+  line-height: 27px;
   color: #47525d;
   font-weight: 400;
   margin-bottom: 26px;
@@ -948,6 +949,16 @@ a:hover {
 }
 
 /* Blog stuff */
+.blog-post-item {
+  display: block;
+  transition: all 150ms ease-in-out;
+}
+
+.blog-post-item:hover { opacity: 1; }
+.blog-post-item:hover > h1 {
+  text-decoration: underline;
+}
+
 .blog-wrapper {
   max-width: 640px !important;
 }
@@ -960,19 +971,22 @@ a:hover {
 .blog-content h2 {
   margin: 35px 0 20px;
   font-size: 21px;
+  font-weight: 500;
 }
 .blog-content h3 {
   margin: 35px 0 20px;
   font-size: 19px;
+  font-weight: 500;
 }
 .blog-content h4, .blog-content h5, .blog-content h6 {
   margin: 35px 0 20px;
   font-size: 18px;
+  font-weight: 500;
 }
 
 .blog-tag {
   box-sizing: border-box;
-  font-size: 11px;
+  font-size: 12px;
   padding: 0 8px;
   margin-right: 8px;
   font-weight: 600;

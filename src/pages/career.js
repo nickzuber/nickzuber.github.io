@@ -88,7 +88,7 @@ const WorkPage = () => (
     <WorkItem icon="wrench" d={curve1}>
       <Company
         title="Software Engineering Intern"
-        color="#23a7f0"
+        color="#0060d5"
         place="Box"
         url="https://box.com/home/"
       />
