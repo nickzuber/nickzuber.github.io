@@ -6,6 +6,11 @@
   src: url('./fonts/Larsseit.ttf');
 } */
 
+::selection {
+  background: #fff29e;
+  color: #444;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
