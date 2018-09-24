@@ -66,7 +66,7 @@ const WorkPage = () => (
     <WorkItem icon="wrench" d={curve1}>
       <Company
         title="Software Engineer"
-        color="#EE3F46"
+        color="#eb3349"
         place="Robin"
         url="https://robinpowered.com/"
       />
@@ -99,7 +99,7 @@ const WorkPage = () => (
     <WorkItem icon="wrench" d={curve2}>
       <Company
         title="Software Engineering Intern"
-        color="#EE3F46"
+        color="#eb3349"
         place="Robin"
         url="https://robinpowered.com/"
       />

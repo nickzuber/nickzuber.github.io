@@ -808,8 +808,8 @@ svg.work-line {
   margin: 10px;
   color: #fff;
   cursor: pointer;
-  background: #2D99D3;
-  border: 1px solid #2D99D3;
+  background: #00a0f5;
+  border: 1px solid #00a0f5;
   border-radius: 3px;
   white-space: nowrap;
   padding: 12px 24px;
@@ -928,7 +928,7 @@ p {
 }
 
 a {
-  color: #2D99D3;
+  color: #00a0f5;
   font-weight: 500;
   text-decoration: none;
   -webkit-transition: all 100ms ease-in-out;
@@ -954,7 +954,7 @@ a:hover {
 }
 .text-cycle li {
   display: block;
-  color: #EE3F46;
+  color: #eb3349;
   height: 30px;
   font-weight: 500;
   text-align: left;
