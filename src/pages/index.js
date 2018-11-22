@@ -12,7 +12,8 @@ const IndexPage = ({ data }) => {
 
       <ContentItem icon="laptop">
         <h1>What I've been up to</h1>
-        <p>Last summer, I was at <a href="https://box.com/home">Box</a> working on <a href="https://github.com/box/ClusterRunner">ClusterRunner</a>, a tool that helps run test suites in the fastest and most efficient way possible. Working with <a href="https://www.python.org/">Python</a> and <a href="http://www.tornadoweb.org/en/stable/">SQLite</a> to help build developer tools.</p>
+        {/* <p>Last summer, I was at <a href="https://box.com/home">Box</a> working on <a href="https://github.com/box/ClusterRunner">ClusterRunner</a>, a tool that helps run test suites in the fastest and most efficient way possible. Working with <a href="https://www.python.org/">Python</a> and <a href="http://www.tornadoweb.org/en/stable/">SQLite</a> to help build developer tools.</p> */}
+        <p>I'm currently at <a href="https://robinpowered.com/">Robin</a> helping simplify <a href="https://robinpowered.com/features/room-scheduling/">scheduling</a>, <a href="https://robinpowered.com/features/status-board/">visibility</a>, and <a href="https://robinpowered.com/features/maps/">management</a> of <a href="https://robinpowered.com/features/room-display/">meeting rooms</a>, <a href="https://robinpowered.com/desks/">desks</a>, and <a href="https://robinpowered.com/features/analytics/">people</a> in your workplace.</p>
       </ContentItem>
 
       <ContentItem icon="heart">

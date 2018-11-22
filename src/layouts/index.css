@@ -844,12 +844,13 @@ svg.work-line {
   border-radius: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 140%;
+  background-size: 145%;
   position: relative;
   z-index: 1;
 }
 
 .has-bursted {
+  z-index: -1;
   animation: stary-burst .8s steps(28) 1;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;

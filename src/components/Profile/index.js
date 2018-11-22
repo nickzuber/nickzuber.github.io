@@ -1,7 +1,7 @@
 
 import React from 'react'
 import ProfileSheet from '../../img/sheets/sprite-sheet-profile.png'
-import ProfileStatic from '../../img/me.jpg'
+import ProfileStatic from '../../img/my-dumbass-face.jpg'
 
 const AnimatedProfile = () => (
   <div
