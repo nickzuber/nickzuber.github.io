@@ -676,14 +676,13 @@ pre tt:after {
   margin: 0 auto;
 }
 .content h1 {
-  /* font-style: italic; */
   font-weight: 500;
-  font-size: 24px;  /* we don't want a header breaking onto next line on mobile */
+  font-size: 19px;  /* we don't want a header breaking onto next line on mobile */
   border-radius: 5px;
   /* text-transform: capitalize; */
   display: inline-block;
   line-height: 1.333em;
-  letter-spacing: -.02em;
+  /* letter-spacing: -.02em; */
   margin: 25px 0 12px -10px;
   padding: 0 10px 0;
 }
