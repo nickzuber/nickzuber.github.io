@@ -34,7 +34,7 @@ class TemplateWrapper extends React.Component {
               fontSize: '80%',
               opacity: '.3',
               letterSpacing: '-0.035em',
-            }}>&copy; Copyright 2018 Nick Zuber</p>
+            }}>&copy; Copyright 2019 Nick Zuber</p>
           </div>
         </div>
       </div>
