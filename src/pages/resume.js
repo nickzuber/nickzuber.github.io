@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from '@emotion/styled';
 import {keyframes} from '@emotion/core';
 import {Link} from 'gatsby';
@@ -131,8 +131,12 @@ function DefaultRoute () {
   const timer = React.useRef();
   const [zoom, setZoom] = React.useState(1);
   const [active, setActive] = React.useState(true);
+  let width = 0;
 
-  const {width} = document.querySelector('body').getBoundingClientRect();
+  if (typeof window !== undefined) {
+    width = window.document.querySelector('body').getBoundingClientRect().width;
+  }
+
   const defaultWidth = Math.min(width * 0.8, 800);
   const zoomedWidth = defaultWidth * zoom;
 
