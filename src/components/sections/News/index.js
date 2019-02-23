@@ -77,7 +77,7 @@ function NewsComponent ({color}) {
 
         <NewsItem date="Dec 2017">
           <NewsText>
-            Accepted an offer to work full time at my favorite startup, <a href="https://robinpowered.com">Robin</a>. I joined the <i>front end engineering team</i> to help build out our design system, internal developer tools & testing infrastructure, and some cool new products.
+            Accepted an offer to work full time at my favorite startup, <a href="https://robinpowered.com">Robin</a>. I joined the <i>front end engineering team</i> to help build out our component library, developer build & release tools, and some cool new products.
           </NewsText>
         </NewsItem>
 

@@ -202,11 +202,11 @@ function ProjectsComponent ({color}) {
           tags={['type system', 'language', 'developer tool']}
           links={[
             { title: 'github'
-            , url: '#'
+            , url: 'https://github.com/nickzuber/infrared'
             },
-            { title: 'articles'
-            , url: '#'
-            },
+            // { title: 'articles'
+            // , url: '#'
+            // },
           ]}
         >
           <ProjectDescription>
@@ -248,10 +248,10 @@ function ProjectsComponent ({color}) {
           tags={['productivity', 'developer tool']}
           links={[
             { title: 'github'
-            , url: '#'
+            , url: 'https://github.com/box/clusterrunner'
             },
             { title: 'website'
-            , url: '#'
+            , url: 'http://clusterrunner.com'
             },
             { title: 'video'
             , url: 'https://www.youtube.com/watch?v=V7fhx1i4qPE'
@@ -331,10 +331,10 @@ function ProjectsComponent ({color}) {
           tags={['community', 'productivity']}
           links={[
             { title: 'github'
-            , url: '#'
+            , url: 'https://github.com/nickzuber/needle'
             },
             { title: 'npm'
-            , url: '#'
+            , url: 'https://www.npmjs.com/package/node-needle'
             },
           ]}
         >
