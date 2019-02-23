@@ -1,0 +1,74 @@
+.pdf-page {
+  margin: 60px 0;
+  box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3);
+}
+
+button.plus:before {
+  content: "+";
+  color: #020202;
+  line-height: 34px;
+  transition: all 200ms ease;
+  background: rgba(190, 197, 208, 0.25);
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scale(0);
+}
+button.plus:hover:before {
+  transform: scale(1);
+}
+button.plus:active:before {
+  background: rgba(190, 197, 208, 0.9)
+}
+
+button.minus:before {
+  content: "–";
+  color: #020202;
+  line-height: 34px;
+  transition: all 200ms ease;
+  background: rgba(190, 197, 208, 0.25);
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scale(0);
+}
+button.minus:hover:before {
+  transform: scale(1);
+}
+button.minus:active:before {
+  background: rgba(190, 197, 208, 0.9)
+}
+
+a.exit:hover {
+  background: rgb(242, 242, 242);
+}
+a.exit:before {
+  content: "×";
+  color: #020202;
+  line-height: 37px;
+  text-align: center;
+  transition: all 200ms ease;
+  background: rgba(190, 197, 208, 0.25);
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scale(0);
+}
+a.exit:hover:before {
+  transform: scale(1);
+}
+a.exit:active:before {
+  background: rgba(190, 197, 208, 0.9)
+}

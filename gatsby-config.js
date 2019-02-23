@@ -1,44 +1,34 @@
 module.exports = {
   siteMetadata: {
-    title: 'Nick Zuber — Software Engineer',
-    author: 'Nick Zuber',
+    title: `Nick Zuber`,
+    description: `Softare engineer man.`,
+    author: `Nick Zuber <zuber.nicholas@gmail.com>`,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-catch-links',
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/posts`,
-        name: 'posts',
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        plugins: [
-          'gatsby-remark-katex'
-        ]
-      }
+        name: `gatsby-starter-default`,
+        short_name: `nickzuber`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#f5c0a2`,
+        display: `minimal-ui`,
+        icon: `src/images/circle-icon.png`, // This path is relative to the root of the site.
+      },
     },
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: "./src/img/rocket.png",
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false
-        }
-      }
-    },
-    'gatsby-plugin-offline'
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.app/offline
+    // 'gatsby-plugin-offline',
   ],
-};
+}

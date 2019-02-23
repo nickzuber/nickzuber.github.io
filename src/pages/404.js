@@ -1,24 +1,44 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import TopProfile from '../components/TopProfile'
+import React from 'react';
+import {Link} from "gatsby"
+import styled from '@emotion/styled';
+import {
+  Title,
+  HeaderAlt
+} from '../components/ui';
+import SEO from '../components/seo';
 
-const Span = ({ children }) =>
-  <span style={{
-    // fontSize: '60%',
-    // verticalAlign: 'top'
-    // opacity: .5
-  }}>
-    {children}
-  </span>
+const Container = styled('div')({
+  flexDirection: 'column',
+  boxSizing: 'border-box',
+  height: '100vh',
+  width: '100vw',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  textAlign: 'center',
+  padding: 20
+});
 
-const FourOhFourPage = () => (
-  <div>
-    <TopProfile />
-    <div style={{ padding: '0 15px' }}>
-      <h1 className="animate-highlight-text-right">Well, this is awkward.</h1>
-      <p>This page doesn't exist. Either the link you clicked on is broken <Span>(wicked sorry about that)</Span> or you just typed in the wrong address <Span>(real smooth dude)</Span>. Either way, let's get <Link to='/'>back to the good stuff</Link>.</p>
-    </div>
-  </div>
-)
+const BigTitle = styled(Title)({
+  fontSize: '3rem',
+  lineHeight: '3.5rem',
+});
 
-export default FourOhFourPage
+const Byline = styled(HeaderAlt)({
+  marginTop: 20,
+  marginBottom: 20,
+  letterSpacing: '1.2px',
+  fontSize: '1.2rem',
+  lineHeight: '1.7rem',
+});
+
+const NotFoundPage = () => (
+  <Container>
+    <SEO />
+    <BigTitle>You look like you're lost.</BigTitle>
+    <Byline>This page doesn't exist</Byline>
+    <Link to="/">Home</Link>
+  </Container>
+);
+
+export default NotFoundPage;
