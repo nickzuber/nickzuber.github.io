@@ -133,7 +133,7 @@ function DefaultRoute () {
   const [active, setActive] = React.useState(true);
   let width = 0;
 
-  if (typeof window !== undefined) {
+  if (typeof window !== 'undefined') {
     width = window.document.querySelector('body').getBoundingClientRect().width;
   }
 
