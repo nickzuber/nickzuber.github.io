@@ -50,6 +50,9 @@ const LoadingContainer = styled('div')({
 }));
 
 const Header = styled('div')({
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
   position: 'fixed',
   zIndex: 99,
   background: 'rgb(50, 54, 57)',
@@ -61,13 +64,18 @@ const Header = styled('div')({
   display: 'flex',
   fontFamily: 'sans-serif',
   alignItems: 'center',
-  fontSize: 14,
+  fontSize: 13,
   paddingLeft: 24,
+  paddingRight: 24,
   fontWeight: 500,
-  color: '#fff'
-}, ({active}) => ({
+  color: 'rgb(241, 241, 241)',
+  'span': {
+    width: 140,
+    textAlign: 'center'
+  }
+}, ({isActive}) => ({
   transition: 'all 300ms ease-in-out',
-  transform: !active ? 'translateY(-50px)' : null,
+  transform: !isActive ? 'translateY(-50px)' : null,
 }));
 
 const ZoomControls = styled('div')({
@@ -77,7 +85,7 @@ const ZoomControls = styled('div')({
   bottom: 48
 });
 
-const ZoomButton = styled('button')({
+const ZoomButton = styled('div')({
   position: 'relative',
   display: 'flex',
   justifyContent: 'center',
@@ -96,10 +104,10 @@ const ZoomButton = styled('button')({
   marginTop: 10,
   borderRadius: '100%',
   cursor: 'pointer',
-}, ({offset = 1, active}) => ({
+}, ({offset = 1, isActive}) => ({
   transition: 'all 300ms ease',
   transitionDelay: `${offset * 0.075}s`,
-  transform: !active ? 'translateX(90px)' : null
+  transform: !isActive ? 'translateX(90px)' : null
 }));
 
 const ZoomLink = styled(Link)({
@@ -121,16 +129,16 @@ const ZoomLink = styled(Link)({
   marginTop: 10,
   borderRadius: '100%',
   cursor: 'pointer',
-}, ({offset = 1, active}) => ({
+}, ({offset = 1, isActive}) => ({
   transition: 'all 300ms ease',
   transitionDelay: `${offset * 0.075}s`,
-  transform: !active ? 'translateX(90px)' : null
+  transform: !isActive ? 'translateX(90px)' : null
 }));
 
 function DefaultRoute () {
   const timer = React.useRef();
   const [zoom, setZoom] = React.useState(1);
-  const [active, setActive] = React.useState(true);
+  const [isActive, setActive] = React.useState(true);
   let width = 0;
 
   if (typeof window !== 'undefined') {
@@ -155,7 +163,7 @@ function DefaultRoute () {
   }
 
   function onOver () {
-    if (!active) setActive(true)
+    if (!isActive) setActive(true)
     clearTimeout(timer.current);
     timer.current = setTimeout(() => setActive(false), DELAY);
   }
@@ -167,11 +175,14 @@ function DefaultRoute () {
         onMouseOver={onOver}
         onTouchStart={onEnter}
         onTouchEnd={onExit}
-        // onMouseEnter={onEnter}
-        // onMouseLeave={onExit}
       >
-        <Header active={active}>
-          NickZuberResume.pdf
+        <Header isActive={isActive}>
+          <span style={{textAlign: 'left'}}>NickZuberResume.pdf</span>
+          <span style={{
+            letterSpacing: 2,
+            fontSize: 14,
+          }}>1/1</span>
+          <span style={{textAlign: 'right'}}>&nbsp;</span>
         </Header>
         <Document
           file={pathToResume}
@@ -186,20 +197,20 @@ function DefaultRoute () {
         <ZoomControls>
           <ZoomLink
             offset={3}
-            active={active}
+            isActive={isActive}
             style={{marginBottom: 24}}
             className="exit"
             to="/"
           >×</ZoomLink>
           <ZoomButton
             offset={2}
-            active={active}
+            isActive={isActive}
             className="plus"
             onClick={() => setZoomInBounds(zoom + ZOOM_STEP)}
           >+</ZoomButton>
           <ZoomButton
             offset={1}
-            active={active}
+            isActive={isActive}
             className="minus"
             onClick={() => setZoomInBounds(zoom - ZOOM_STEP)}
           >–</ZoomButton>

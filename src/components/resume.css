@@ -3,10 +3,11 @@
   box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3);
 }
 
-button.plus:before {
+div.plus:before {
   content: "+";
   color: #020202;
-  line-height: 34px;
+  line-height: 36px;
+  text-align: center;
   transition: all 200ms ease;
   background: rgba(190, 197, 208, 0.25);
   border-radius: 100%;
@@ -18,17 +19,18 @@ button.plus:before {
   right: 0;
   transform: scale(0);
 }
-button.plus:hover:before {
+div.plus:hover:before {
   transform: scale(1);
 }
-button.plus:active:before {
+div.plus:active:before {
   background: rgba(190, 197, 208, 0.9)
 }
 
-button.minus:before {
+div.minus:before {
   content: "–";
   color: #020202;
-  line-height: 34px;
+  line-height: 36px;
+  text-align: center;
   transition: all 200ms ease;
   background: rgba(190, 197, 208, 0.25);
   border-radius: 100%;
@@ -40,10 +42,10 @@ button.minus:before {
   right: 0;
   transform: scale(0);
 }
-button.minus:hover:before {
+div.minus:hover:before {
   transform: scale(1);
 }
-button.minus:active:before {
+div.minus:active:before {
   background: rgba(190, 197, 208, 0.9)
 }
 

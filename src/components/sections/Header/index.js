@@ -16,7 +16,7 @@ const ImageContainer = styled('div')({
   height: 230,
   '@media (max-width: 750px)': {
     marginTop: 20,
-    marginBottom: 80
+    marginBottom: 90
   }
 });
 

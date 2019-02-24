@@ -6,6 +6,7 @@ import {
   HeaderAlt
 } from '../components/ui';
 import SEO from '../components/seo';
+import '../components/layout.css';
 
 const Container = styled('div')({
   flexDirection: 'column',
@@ -27,8 +28,8 @@ const BigTitle = styled(Title)({
 const Byline = styled(HeaderAlt)({
   marginTop: 20,
   marginBottom: 20,
-  letterSpacing: '1.2px',
-  fontSize: '1.2rem',
+  letterSpacing: '1.1px',
+  fontSize: '1.1rem',
   lineHeight: '1.7rem',
 });
 
@@ -37,7 +38,7 @@ const NotFoundPage = () => (
     <SEO />
     <BigTitle>You look like you're lost.</BigTitle>
     <Byline>This page doesn't exist</Byline>
-    <Link to="/">Home</Link>
+    <Link to="/">Return home</Link>
   </Container>
 );
 
