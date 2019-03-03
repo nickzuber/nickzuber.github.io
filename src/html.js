@@ -1,4 +1,5 @@
 import React from 'react';
+import {withPrefix} from 'gatsby';
 import PropTypes from 'prop-types';
 
 export default class HTML extends React.Component {
@@ -13,6 +14,7 @@ export default class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <link importance="low" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossOrigin="anonymous" />
+          <link importance="low" rel="stylesheet" href={withPrefix('stylesheet/font.css')} />
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>
