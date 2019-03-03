@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'gatsby';
+import {Link, withPrefix} from 'gatsby';
 import styled from '@emotion/styled'
 import {
   Section,
@@ -66,7 +66,8 @@ function NewsComponent ({color}) {
       <Container style={{paddingBottom: 60}}>
         <SubHeader className="section-header">Updates</SubHeader>
         <p style={{marginBottom: 40}}>
-          Over the years I've has the pleasure of working with some amazing people and I've made some accomplishments along the way. You can take a look at <Link to="/resume">my resume</Link> to see what I've been up to lately.
+          {/* Over the years I've has the pleasure of working with some amazing people and I've made some accomplishments along the way. You can take a look at <Link to="/resume">my resume</Link> to see what I've been up to lately. */}
+          Over the years I've has the pleasure of working with some amazing people and I've made some accomplishments along the way. You can take a look at <a href={withPrefix('/pdf/NickZuberResume.pdf')}>my resume</a> to see what I've been up to lately.
         </p>
 
         <NewsItem date="May 2018">
