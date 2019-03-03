@@ -19,6 +19,10 @@ export default class HTML extends React.Component {
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
+          <noscript>
+            <link importance="low" rel="stylesheet" href={withPrefix('stylesheet/font.css')} />
+            <p>Hey wise guy, haven't ya heard? You need JavaScript to run this (any) website.</p>
+          </noscript>
           <div
             key={`body`}
             id="___gatsby"
