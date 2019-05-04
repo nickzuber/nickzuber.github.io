@@ -20,7 +20,7 @@ function AboutComponent () {
           I recently graduated with a BS in Computer Science and minor in Mathematics from <a href="https://www.uml.edu/">University of Massachusetts Lowell</a>, where I studied programming language design and <a href="https://arxiv.org/abs/1802.06375">gradual typing</a> with <a href="http://cimini.info/">Matteo Cimini</a>, machine learning with <a href="https://www.uml.edu/sciences/computer-science/faculty/adjunct-faculty/braun-jerome.aspx">Dr. Jerome J. Braun</a>, and compiler architecture and design with <a href="http://jeapostrophe.github.io/home/">Jay McCarthy</a>.
         </p>
         <p>
-          Other things I enjoy: compilers, graph theory, <a href="https://webassembly.org/">WebAssembly</a>, crossword puzzles, <a href="https://ocaml.org/">OCaml</a>, developer tooling, open source software, <a href="https://www.uml.edu/CampusRecreation/Club-Sports/Active-Clubs/Table-Tennis/">table tennis</a>, classical piano, scented candles, and <a href="https://vsco.co/zuber">loving plants with all my heart</a>.
+          Other things I enjoy: compilers, <a href="https://www.chess.com/member/nickzuber">chess</a>, graph theory, <a href="https://webassembly.org/">WebAssembly</a>, crossword puzzles, <a href="https://ocaml.org/">OCaml</a>, developer tooling, open source software, <a href="https://www.uml.edu/CampusRecreation/Club-Sports/Active-Clubs/Table-Tennis/">table tennis</a>, classical piano, scented candles, and <a href="https://vsco.co/zuber">loving plants with all my heart</a>.
         </p>
       </Container>
     </Section>
