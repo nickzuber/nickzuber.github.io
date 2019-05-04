@@ -16,9 +16,9 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `Nick Zuber ⊇ Software Engineer`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Nick Zuber `,
+        name: `Nick Zuber`,
         short_name: `nickzuber`,
         start_url: `/`,
         background_color: `#ffffff`,
