@@ -11,7 +11,7 @@ function AboutComponent () {
       <Container>
         <SubHeader className="section-header">About</SubHeader>
         <p>
-          I'm Nick Zuber, a software engineer on the [secret] and <a href="https://robinpowered.com/features/">devices</a> teams at <a href="https://robinpowered.com">Robin</a>, helping modernize the open office. Previously, I interned at <a href="https://box.com/home">Box</a> as a tooling engineer where I helped work on <a href="https://www.clusterrunner.com">ClusterRunner</a>, which is an open source tool for horizontally optimizing tests & testing infrastructure.
+          I'm Nick Zuber, a software engineer on the <a href="https://robinpowered.com/features/maps/">maps</a> and <a href="https://robinpowered.com/features/">devices</a> teams at <a href="https://robinpowered.com">Robin</a>, helping modernize the open office. Previously, I interned at <a href="https://box.com/home">Box</a> as a tooling engineer where I helped work on <a href="https://www.clusterrunner.com">ClusterRunner</a>, which is an open source tool for horizontally optimizing tests & testing infrastructure.
         </p>
         <p>
           In my spare time, I love to research and study certain areas of computer science. My current research interests span across programming language design, user experience and interaction, and type theory. In particular, I've been learning about <i>fluid type systems</i>: bringing static type analysis to dynamic programming languages through type inference at <i>no cost</i>.
