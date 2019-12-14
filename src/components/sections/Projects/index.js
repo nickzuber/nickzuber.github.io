@@ -225,7 +225,7 @@ function ProjectsComponent ({color}) {
             , url: 'https://github.com/nickzuber/meteorite'
             },
             { title: 'website'
-            , url: 'https://meteorite.surge.sh/'
+            , url: 'https://meteorite.dev/'
             },
             { title: 'blog'
             , url: 'https://medium.com/@nickzuber/why-github-notifications-make-it-hard-to-get-things-done-how-to-fix-it-be7cea936063'
