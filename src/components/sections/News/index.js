@@ -70,6 +70,12 @@ function NewsComponent ({color}) {
           Over the years I've has the pleasure of working with some amazing people and I've made some accomplishments along the way. You can take a look at <a href={withPrefix('/pdf/NickZuberResume.pdf')}>my resume</a> to see what I've been up to lately.
         </p>
 
+        <NewsItem date="April 2020">
+          <NewsText>
+            Promoted internally to a senior software engineer. I also became the lead engineer on the <a href="https://robinpowered.com/features/maps/">maps</a> platform, helping optimize and evolve the product as a whole.
+          </NewsText>
+        </NewsItem>
+
         <NewsItem date="May 2018">
           <NewsText>
             Graduated from <a href="https://uml.edu/">University of Massachusetts Lowell</a> with a BS in Computer Science and minor in Mathematics, focusing on metatheory of programming languages.

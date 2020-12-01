@@ -13,7 +13,7 @@ const ImageContainer = styled('div')({
   position: 'relative',
   zIndex: 1,
   width: 200,
-  height: 230,
+  height: 200,
   '@media (max-width: 750px)': {
     marginTop: 20,
     marginBottom: 90
