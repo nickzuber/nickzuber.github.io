@@ -128,6 +128,8 @@ function getLinkIcon(title) {
     case "video":
     case "youtube":
       return <i className="fab fa-youtube" />;
+    case "pypi":
+      return <i class="fab fa-python" />;
     default:
       return null;
   }
@@ -272,6 +274,32 @@ function ProjectsComponent({ color }) {
           </ProjectDescription>
         </ProjectItem>
         <ProjectItem
+          title="chs: Play chess in your terminal"
+          subtitle="open source + pypi"
+          tags={["cli app"]}
+          links={[
+            { title: "github", url: "https://github.com/nickzuber/chs" },
+            {
+              title: "tweets",
+              url:
+                "https://twitter.com/nick_zuber/status/1146875377056280577",
+            },
+            { title: "pypi", url: "https://pypi.org/project/chs" },
+          ]}
+        >
+          <ProjectDescription>
+            Spawned from my love for chess, I created an app to play chess against
+            the Stockfish engine in your terminal. It ended up being a great tool
+            for learning and practicing reading the board (+ algebraic notation).
+          </ProjectDescription>
+          <ProjectDescription>
+            This was a ton of fun to make because I was able to build it using
+            Python which I don't get the chance to use too often, and designing
+            a UI engine for the terminal to print the chess board was an interesting
+            challenge.
+          </ProjectDescription>
+        </ProjectItem>
+        <ProjectItem
           title="ReasonML + JavaScript interoperability tool"
           subtitle="open source + bucklescript"
           tags={["developer tool", "productivity"]}
@@ -280,7 +308,7 @@ function ProjectsComponent({ color }) {
             {
               title: "tweets",
               url:
-                "https://mobile.twitter.com/nick_zuber/status/961439260997021697",
+                "https://twitter.com/nick_zuber/status/961439260997021697",
             },
             { title: "npm", url: "https://www.npmjs.com/package/add-reason" },
           ]}
