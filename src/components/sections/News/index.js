@@ -66,9 +66,20 @@ function NewsComponent ({color}) {
       <Container style={{paddingBottom: 60}}>
         <SubHeader className="section-header">Updates</SubHeader>
         <p style={{marginBottom: 40}}>
-          {/* Over the years I've has the pleasure of working with some amazing people and I've made some accomplishments along the way. You can take a look at <Link to="/resume">my resume</Link> to see what I've been up to lately. */}
           Over the years I've has the pleasure of working with some amazing people and I've made some accomplishments along the way. You can take a look at <a href={withPrefix('/pdf/NickZuberResume.pdf')}>my resume</a> to see what I've been up to lately.
         </p>
+
+        <NewsItem date="November 2021">
+          <NewsText>
+            Robin's <a href="https://robinpowered.com/blog/a-flexible-tool-for-a-flexible-office">layout tool</a> officially launched! My team and I have been working hard on this product for the past year or so – it's basically Figma for building offices.
+          </NewsText>
+        </NewsItem>
+
+        <NewsItem date="April 2021">
+          <NewsText>
+            Officially released <a href="https://meteorite.dev/">Meteorite</a> to the general public! It was a very fun and rewarding experience working on this smart GitHub notification inbox.
+          </NewsText>
+        </NewsItem>
 
         <NewsItem date="April 2020">
           <NewsText>

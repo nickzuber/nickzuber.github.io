@@ -11,7 +11,7 @@ function AboutComponent () {
       <Container>
         <SubHeader className="section-header">About</SubHeader>
         <p>
-          I'm Nick Zuber, a senior software engineer currently working at <a href="https://robinpowered.com">Robin</a> leading the <a href="https://robinpowered.com/features/maps/">maps</a> platform, helping to enable the world for hybrid work. Previously, I worked at <a href="https://box.com/home">Box</a> as a tooling engineer where I helped work on <a href="https://www.clusterrunner.com">ClusterRunner</a>, which is an open source tool for horizontally optimizing tests & testing infrastructure.
+          I'm Nick Zuber, a senior software engineer currently working at <a href="https://robinpowered.com">Robin</a> leading the <a href="https://robinpowered.com/features/maps/">maps</a> platform, making it easy for companies to implement <a href="https://robinpowered.com/blog/what-is-hybrid-work">hybrid work</a> in their office. Previously, I worked at <a href="https://box.com/home">Box</a> as a tooling engineer where I helped work on <a href="https://www.clusterrunner.com">ClusterRunner</a>, which is an open source tool for horizontally optimizing tests & testing infrastructure.
         </p>
         <p>
           In my spare time, I love to research and study certain areas of computer science. My current research interests span across programming language design, user experience and interaction, and type theory. In particular, I've been learning about <i>fluid type systems</i>: bringing type analysis to dynamic programming languages through type inference.
