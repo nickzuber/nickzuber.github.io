@@ -4,6 +4,8 @@
   min-width: 300px;
   min-height: 30px;
   margin: 10px auto 20px;
+  display: flex;
+  align-items: center;
 }
 
 .hot-links a {

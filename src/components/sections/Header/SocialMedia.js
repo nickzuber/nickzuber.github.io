@@ -10,11 +10,17 @@ const SocialMedia = () => (
       </svg>
     </a>
 
-    <a href="https://www.npmjs.com/~nickzuber">
+    <a href="https://www.polywork.com/zube">
       <div className="hot-link">
-        <svg viewBox="-2 -8 94 94">
-          <path d="M0,0 L0,85.4980695 L85.4980695,85.4980695 L85.4980695,0 L0,0 Z" fill={FILL_COLOR}></path>
-          <path d="M42.5019305,14.3320463 L14.3320463,14.3320463 L14.3320463,28.6640927 L14.3320463,71.1660232 L42.5019305,71.1660232 L42.5019305,28.6640927 L56.8339768,28.6640927 L56.8339768,71.1660232 L71.1660232,71.1660232 L71.1660232,28.6640927 L71.1660232,14.3320463 L42.5019305,14.3320463 L42.5019305,14.3320463 Z" fill="#FFFFFF"></path>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{transform: 'scale(1.2) translate(-2px, -1px)'}}>
+          <path d="M5 7.33333C5 6.04467 6.04467 5 7.33333 5H9.66667V9.66667H5V7.33333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M18.9999 7.33333C18.9999 6.04467 17.9552 5 16.6666 5H14.3333V9.66667H18.9999V7.33333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M18.9999 12C18.9999 13.2887 17.9552 14.3334 16.6666 14.3334H14.3333V9.66669H18.9999V12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M5 16.6666C5 17.9553 6.04467 19 7.33333 19H9.66667V14.3333H5V16.6666Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M14.3334 16.6666C14.3334 17.9553 13.2887 19 12.0001 19H9.66675V14.3333H14.3334V16.6666Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M5 9.66669H9.66667V14.3334H5V9.66669Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M9.66675 5H14.3334V9.66667H9.66675V5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M9.66675 9.66669H14.3334V14.3334H9.66675V9.66669Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
       </div>
     </a>
@@ -48,6 +54,15 @@ const SocialMedia = () => (
           <path d="M85.3211734,130.636435 L166.488998,4.73960646 C168.784487,1.18903019 173.837865,-0.214686007 177.718728,1.6018879 L255.038719,38.5113668 C255.534148,38.7590814 255.715806,39.3370822 255.426805,39.7499399 L170.642347,171.377233 L85.3211734,130.652949 L85.3211734,130.636435 L85.3211734,130.636435 Z" fill="#777"></path>
           <path d="M11.8077304,3.9221482 C5.31760724,0.825715411 3.1129471,3.12946141 6.91949514,9.04158375 L85.3211734,130.636435 L170.642347,171.360719 L85.5110879,39.3040535 C85.3872306,39.114139 85.2138304,38.9572531 85.0156587,38.8581672 L11.8077304,3.93040535 L11.8077304,3.9221482 L11.8077304,3.9221482 Z" fill="#444"></path>
           <path d="M85.3211734,199.476329 C85.3211734,206.412338 80.0118233,209.550057 73.513443,206.445367 L7.08463822,174.737895 C3.18726149,172.888293 0,167.967029 0,163.797166 L0,8.38101142 C0,2.83220386 4.25243436,0.32202901 9.45444145,2.8074324 L84.8670299,38.8086243 C85.1477731,38.9324816 85.3211734,39.2049677 85.3211734,39.5022252 L85.3211734,199.4433 L85.3211734,199.476329 L85.3211734,199.476329 Z" fill={FILL_COLOR}></path>
+        </svg>
+      </div>
+    </a>
+
+    <a href="https://www.npmjs.com/~nickzuber">
+      <div className="hot-link">
+        <svg viewBox="-2 -8 94 94">
+          <path d="M0,0 L0,85.4980695 L85.4980695,85.4980695 L85.4980695,0 L0,0 Z" fill={FILL_COLOR}></path>
+          <path d="M42.5019305,14.3320463 L14.3320463,14.3320463 L14.3320463,28.6640927 L14.3320463,71.1660232 L42.5019305,71.1660232 L42.5019305,28.6640927 L56.8339768,28.6640927 L56.8339768,71.1660232 L71.1660232,71.1660232 L71.1660232,28.6640927 L71.1660232,14.3320463 L42.5019305,14.3320463 L42.5019305,14.3320463 Z" fill="#FFFFFF"></path>
         </svg>
       </div>
     </a>

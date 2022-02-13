@@ -188,13 +188,51 @@ function ProjectsComponent({ color }) {
         <SubHeader className="section-header">Projects</SubHeader>
 
         <p style={{ marginBottom: 40 }}>
-          I love working on side projects. Creating free & accessible software
-          is something I'm really passionate about. All of{" "}
-          <a href="https://github.com/nickzuber">
-            my projects can be found on GitHub
-          </a>
-          , but a few of my personal favorites are highlighted here.
+          I love working on side projects. Creating free & accessible software is something I'm
+          really passionate about. All of{" "}
+          <a href="https://github.com/nickzuber">my projects can be found on GitHub</a>, but a
+          few of my personal favorites are highlighted here.
         </p>
+
+        <ProjectItem
+          title="Crosswordle: A daily crossword game"
+          subtitle="daily game"
+          tags={["game", "web app"]}
+          links={[
+            { title: "github", url: "https://github.com/nickzuber/cross-wordle" },
+            { title: "website", url: "https://www.cross-wordle.games/" },
+            { title: "tweets", url: "https://twitter.com/nick_zuber/status/1491932699539521548" },
+          ]}
+        >
+          <ProjectDescription>
+            Inspired by games like Wordle, Scrabble, and Bananagrams, with this game you're
+            tasked with building a tiny 6x6 crossword board using the 20 letters given to you.
+          </ProjectDescription>
+          <ProjectDescription>
+            This one was a ton of fun to make and had some interesting technical challenging
+            (generating valid 6x6 crosswords with 20 letters).
+          </ProjectDescription>
+        </ProjectItem>
+
+        <ProjectItem
+          title="Spectre: Simple SVG editor for tracing"
+          subtitle="open source"
+          tags={["editor", "web app", "svg"]}
+          links={[
+            { title: "github", url: "https://github.com/nickzuber/spectre" },
+            { title: "website", url: "https://spectre-nickzuber.vercel.app/" },
+          ]}
+        >
+          <ProjectDescription>
+            Spectre is an experimental SVG editor designed to help make the process of creating
+            clean & minimal SVGs really simple.
+          </ProjectDescription>
+          <ProjectDescription>
+            The features for this editor are also very intentional — they're designed around
+            specific workflows to help users trace complex shapes and generate <i>simple</i>{" "}
+            SVGs.
+          </ProjectDescription>
+        </ProjectItem>
 
         <ProjectItem
           title="Infrared: Inferred static type checker for JavaScript"
@@ -208,16 +246,14 @@ function ProjectsComponent({ color }) {
           ]}
         >
           <ProjectDescription>
-            Infrared is a developer tool that statically analyzes JavaScript
-            projects and finds type errors. If you've ever used{" "}
-            <a href="https://flow.org/">Flow</a> before, this project is kind of
-            like that but specializing in type inference.
+            Infrared is a developer tool that statically analyzes JavaScript projects and finds
+            type errors. If you've ever used <a href="https://flow.org/">Flow</a> before, this
+            project is kind of like that but specializing in type inference.
           </ProjectDescription>
           <ProjectDescription>
-            This project fills the gap between vanilla JavaScript and
-            TypeScript: if you want to go all-in on a type system you should use
-            TypeScript. If you want type safety without changing <i>anything</i>{" "}
-            in your project, use Infrared.
+            This project fills the gap between vanilla JavaScript and TypeScript: if you want
+            to go all-in on a type system you should use TypeScript. If you want type safety
+            without changing <i>anything</i> in your project, use Infrared.
           </ProjectDescription>
         </ProjectItem>
         <ProjectItem
@@ -239,14 +275,13 @@ function ProjectsComponent({ color }) {
           ]}
         >
           <ProjectDescription>
-            Smarter GitHub notifications. Organize and score notifications based
-            on importance and relevance.
+            Smarter GitHub notifications. Organize and score notifications based on importance
+            and relevance.
           </ProjectDescription>
           <ProjectDescription>
-            Meterorite is the solution for managing your GitHub notifications by
-            filtering out the ones that don't matter to you, scoring & sorting
-            the ones that matter based on personalized heuristics, and using
-            desktop notifications.
+            Meterorite is the solution for managing your GitHub notifications by filtering out
+            the ones that don't matter to you, scoring & sorting the ones that matter based on
+            personalized heuristics, and using desktop notifications.
           </ProjectDescription>
         </ProjectItem>
         <ProjectItem
@@ -263,14 +298,13 @@ function ProjectsComponent({ color }) {
           ]}
         >
           <ProjectDescription>
-            ClusterRunner is a testing tool that makes it easy to execute test
-            suites across your infrastructure in the fastest and most efficient
-            way possible.
+            ClusterRunner is a testing tool that makes it easy to execute test suites across
+            your infrastructure in the fastest and most efficient way possible.
           </ProjectDescription>
           <ProjectDescription>
-            This project is run internally at Box on ~100,000 tests each day and
-            speeds up the feedback loop by 300x. I created a caching layer for
-            build artifacts and reworked the API.
+            This project is run internally at Box on ~100,000 tests each day and speeds up the
+            feedback loop by 300x. I created a caching layer for build artifacts and reworked
+            the API.
           </ProjectDescription>
         </ProjectItem>
         <ProjectItem
@@ -281,22 +315,20 @@ function ProjectsComponent({ color }) {
             { title: "github", url: "https://github.com/nickzuber/chs" },
             {
               title: "tweets",
-              url:
-                "https://twitter.com/nick_zuber/status/1146875377056280577",
+              url: "https://twitter.com/nick_zuber/status/1146875377056280577",
             },
             { title: "pypi", url: "https://pypi.org/project/chs" },
           ]}
         >
           <ProjectDescription>
-            Spawned from my love for chess, I created an app to play chess against
-            the Stockfish engine in your terminal. It ended up being a great tool
-            for learning and practicing reading the board (+ algebraic notation).
+            Spawned from my love for chess, I created an app to play chess against the
+            Stockfish engine in your terminal. It ended up being a great tool for learning and
+            practicing reading the board (+ algebraic notation).
           </ProjectDescription>
           <ProjectDescription>
-            This was a ton of fun to make because I was able to build it using
-            Python which I don't get the chance to use too often, and designing
-            a UI engine for the terminal to print the chess board was an interesting
-            challenge.
+            This was a ton of fun to make because I was able to build it using Python which I
+            don't get the chance to use too often, and designing a UI engine for the terminal
+            to print the chess board was an interesting challenge.
           </ProjectDescription>
         </ProjectItem>
         <ProjectItem
@@ -307,30 +339,24 @@ function ProjectsComponent({ color }) {
             { title: "github", url: "https://github.com/nickzuber/add-reason" },
             {
               title: "tweets",
-              url:
-                "https://twitter.com/nick_zuber/status/961439260997021697",
+              url: "https://twitter.com/nick_zuber/status/961439260997021697",
             },
             { title: "npm", url: "https://www.npmjs.com/package/add-reason" },
           ]}
         >
           <ProjectDescription>
-            This is an easy to use cli tool that helps you seamlessly interop
-            ReasonML code with an existing JavaScript project. You tell us where
-            your ReasonML code is, and we'll handle the rest!
+            This is an easy to use cli tool that helps you seamlessly interop ReasonML code
+            with an existing JavaScript project. You tell us where your ReasonML code is, and
+            we'll handle the rest!
           </ProjectDescription>
           <ProjectDescription>
             After this project started{" "}
-            <a href="https://twitter.com/EricVicenti/status/961704695738769408">
-              getting
-            </a>{" "}
-            <a href="https://twitter.com/mjackson/status/961728212085567488">
-              pretty
-            </a>{" "}
+            <a href="https://twitter.com/EricVicenti/status/961704695738769408">getting</a>{" "}
+            <a href="https://twitter.com/mjackson/status/961728212085567488">pretty</a>{" "}
             <a href="https://mobile.twitter.com/nick_zuber/status/961439260997021697">
               popular
             </a>
-            , I worked with the BuckleScript team to help integrate this
-            functionality{" "}
+            , I worked with the BuckleScript team to help integrate this functionality{" "}
             <a href="https://github.com/BuckleScript/bucklescript/issues/2500#issuecomment-364287815">
               into the main project
             </a>
@@ -353,8 +379,8 @@ function ProjectsComponent({ color }) {
             <a href="https://github.com/nickzuber/lets-make-a-compiler/blob/master/src/compiler.ml">
               built one from scratch
             </a>{" "}
-            using OCaml. It compiles a JavaScript-like language which features
-            like closures, functions, vectors, and types, to x86-64 assembly.
+            using OCaml. It compiles a JavaScript-like language which features like closures,
+            functions, vectors, and types, to x86-64 assembly.
           </ProjectDescription>
           <ProjectDescription>
             Don't think I skipped out on the fun stuff; I also wrote an{" "}
@@ -375,17 +401,14 @@ function ProjectsComponent({ color }) {
         >
           <ProjectDescription>
             Markup is a web app that lets people easily create and{" "}
-            <a href="https://katex.org/docs/supported.html">
-              share rich TeX snippets
-            </a>
-            . You can write snippets containing markdown and/or math
-            typesettting - similar to the math typesetting you find in LaTeX
-            distributions.
+            <a href="https://katex.org/docs/supported.html">share rich TeX snippets</a>. You
+            can write snippets containing markdown and/or math typesettting - similar to the
+            math typesetting you find in LaTeX distributions.
           </ProjectDescription>
           <ProjectDescription>
-            I made this to help myself and other students collaborate in our
-            mathematics and CS courses. It was also a simple way to describe
-            questions to professors over email, which was nice.
+            I made this to help myself and other students collaborate in our mathematics and CS
+            courses. It was also a simple way to describe questions to professors over email,
+            which was nice.
           </ProjectDescription>
         </ProjectItem>
         <ProjectItem
@@ -398,8 +421,7 @@ function ProjectsComponent({ color }) {
           ]}
         >
           <ProjectDescription>
-            Needle is a standalone extensive data structure library in
-            JavaScript.
+            Needle is a standalone extensive data structure library in JavaScript.
           </ProjectDescription>
           <ProjectDescription>
             Fun fact, this was actually one of{" "}
