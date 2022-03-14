@@ -16,7 +16,7 @@ const ImageContainer = styled('div')({
   height: 200,
   '@media (max-width: 750px)': {
     marginTop: 20,
-    marginBottom: 90
+    marginBottom: 50
   }
 });
 
@@ -104,7 +104,7 @@ function HeaderComponent ({color}) {
           <BigHeader className="header">Nick Zuber</BigHeader>
           <HeaderAlt>computer science & mathematics</HeaderAlt>
           <HeaderAlt>university of massachusetts lowell</HeaderAlt>
-          <p style={{margin: 0, marginTop: 10, lineHeight: '2rem'}}>he/him/his</p>
+          <Mono>he/him/his</Mono>
           <Mono>zuber [dot] nicholas [at] gmail</Mono>
           <SocialMedia />
           <List>
@@ -116,7 +116,7 @@ function HeaderComponent ({color}) {
         </div>
         <ImageContainer id="header-image">
           <Image />
-          <Caption>Kingdom Hearts is just a fanfic gone too far.</Caption>
+          {/* <Caption>Kingdom Hearts is just a fanfic gone too far.</Caption> */}
         </ImageContainer>
       </HeaderContainer>
     </Section>

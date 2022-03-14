@@ -27,7 +27,7 @@ const Image = () => (
       }
     `}
     render={data => (
-      <Img style={{borderRadius: 3}} fluid={data.placeholderImage.childImageSharp.fluid} />
+      <Img style={{borderRadius: '100%'}} fluid={data.placeholderImage.childImageSharp.fluid} />
     )}
   />
 );

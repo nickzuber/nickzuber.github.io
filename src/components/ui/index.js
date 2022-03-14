@@ -4,7 +4,10 @@ import styled from '@emotion/styled';
 export const Section = styled('div')({
   position: 'relative',
   width: '100%',
-  background: '#fafafa'
+  background: '#fafafa',
+  '& > div': {
+    borderTop: '1px solid #28282822',
+  }
 }, ({color}) => color && ({
   background: color
 }));
@@ -16,6 +19,7 @@ export const Container = styled('div')({
 });
 
 export const Header = styled('h1')({
+  fontFamily: 'medium-marketing-display-font,Geneva,Arial,sans-serif',
   zIndex: 0,
   fontSize: '2.6rem',
   lineHeight: '4.6rem',
@@ -23,9 +27,9 @@ export const Header = styled('h1')({
 });
 
 export const SubHeader = styled(Header)({
-  fontSize: '2.5rem',
+  fontSize: '3rem',
   fontWeight: 500,
-  margin: '0 auto 20px'
+  margin: '0 0 10px'
 });
 
 export const HeaderAlt = styled('h2')({
