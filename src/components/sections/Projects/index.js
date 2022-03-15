@@ -2,6 +2,28 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Header, SubHeader, HeaderAlt, Section, Container } from "../../ui";
 
+const Colors = [
+  '#51cf66',
+  '#fcc419',
+  '#ff922b',
+  '#20c997',
+  '#22b8cf',
+  '#339af0',
+  '#9775fa',
+  '#cc5de8',
+  '#f06595',
+  '#ff6b6b',
+];
+
+function* makeColorPicker () {
+  let i = 0;
+  while (true) {
+    yield Colors[i++ % Colors.length]
+  }
+}
+
+const pickColor = makeColorPicker()
+
 const ProjectContainer = styled("div")({
   display: "flex",
   flexDirection: "row",
@@ -13,12 +35,24 @@ const ProjectContainer = styled("div")({
 });
 
 const ProjectHeader = styled(Header)({
+  position: 'relative',
   margin: 0,
   fontWeight: 500,
   fontSize: "1.6em",
   lineHeight: "1.4em",
   fontFamily: "medium-marketing-display-font",
-});
+}, props => ({
+  '&:after': {
+    content: '""',
+    height: 3,
+    width: '50%',
+    background: pickColor.next().value,
+    position: 'absolute',
+    top: -6,
+    left: -2,
+    borderRadius: 2
+  }
+}));
 
 const ProjectHeaderAlt = styled(HeaderAlt)({
   fontSize: "0.85rem",
@@ -84,11 +118,11 @@ const ProjectDescription = styled("p")({
   },
 });
 
-function ProjectItem({ title, subtitle, tags = [], links = [], children }) {
+function ProjectItem({ title, subtitle, tags = [], links = [], color = null, children }) {
   return (
     <ProjectContainer>
       <ProjectTitleContainer>
-        <ProjectHeader>{title}</ProjectHeader>
+        <ProjectHeader color={color}>{title}</ProjectHeader>
         <ProjectHeaderAlt>{subtitle}</ProjectHeaderAlt>
         {/* <Tags tags={tags} /> */}
       </ProjectTitleContainer>
@@ -197,6 +231,7 @@ function ProjectsComponent({ color }) {
         <ProjectItem
           title="Crosswordle: A daily crossword game"
           subtitle="daily game"
+          color="#fa5252"
           tags={["game", "web app"]}
           links={[
             { title: "github", url: "https://github.com/nickzuber/cross-wordle" },
@@ -217,6 +252,7 @@ function ProjectsComponent({ color }) {
         <ProjectItem
           title="Spectre: Simple SVG editor for tracing"
           subtitle="open source"
+          color="#be4bdb"
           tags={["editor", "web app", "svg"]}
           links={[
             { title: "github", url: "https://github.com/nickzuber/spectre" },
@@ -237,6 +273,7 @@ function ProjectsComponent({ color }) {
         <ProjectItem
           title="Infrared: Inferred static type checker for JavaScript"
           subtitle="open source"
+          color="#5c7cfa"
           tags={["type system", "language", "developer tool"]}
           links={[
             { title: "github", url: "https://github.com/nickzuber/infrared" },
@@ -259,6 +296,7 @@ function ProjectsComponent({ color }) {
         <ProjectItem
           title="Meteorite: Smarter GitHub notifications"
           subtitle="open source"
+          color="#20c997"
           tags={["web app", "productivity"]}
           links={[
             { title: "github", url: "https://github.com/nickzuber/meteorite" },
@@ -287,6 +325,7 @@ function ProjectsComponent({ color }) {
         <ProjectItem
           title="ClusterRunner: Optimize test suites horizontally "
           subtitle="box"
+          color="#20c997"
           tags={["productivity", "developer tool"]}
           links={[
             { title: "github", url: "https://github.com/box/clusterrunner" },
@@ -310,6 +349,7 @@ function ProjectsComponent({ color }) {
         <ProjectItem
           title="chs: Play chess in your terminal"
           subtitle="open source"
+          color="#20c997"
           tags={["cli app"]}
           links={[
             { title: "github", url: "https://github.com/nickzuber/chs" },
@@ -334,6 +374,7 @@ function ProjectsComponent({ color }) {
         <ProjectItem
           title="ReasonML + JavaScript interoperability tool"
           subtitle="open source"
+          color="#20c997"
           tags={["developer tool", "productivity"]}
           links={[
             { title: "github", url: "https://github.com/nickzuber/add-reason" },
@@ -366,6 +407,7 @@ function ProjectsComponent({ color }) {
         <ProjectItem
           title="Kelp: x86-64 compiler"
           subtitle="COMP 4060: Compiler Construction"
+          color="#20c997"
           tags={["compiler", "language"]}
           links={[
             {
@@ -393,6 +435,7 @@ function ProjectsComponent({ color }) {
         <ProjectItem
           title="Markup: Create & share TeX snippets"
           subtitle="open source"
+          color="#20c997"
           tags={["web app", "community"]}
           links={[
             { title: "github", url: "https://github.com/nickzuber/markup" },
@@ -414,6 +457,7 @@ function ProjectsComponent({ color }) {
         <ProjectItem
           title="Needle: Extensive data structure library"
           subtitle="open source"
+          color="#51cf66"
           tags={["community", "productivity"]}
           links={[
             { title: "github", url: "https://github.com/nickzuber/needle" },
