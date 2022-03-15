@@ -21,7 +21,7 @@ function DefaultRoute () {
       <SEO keywords={['nick', 'zuber', 'zubes', 'software', 'engineer', 'javascript']} />
       <HeaderComponent />
       <AboutComponent />
-      {/* <NewsComponent /> */}
+      <NewsComponent />
       <ProjectsComponent />
       <WritingsComponent />
       <ReadingsComponent />

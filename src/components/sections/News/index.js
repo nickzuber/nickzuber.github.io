@@ -69,7 +69,13 @@ function NewsComponent ({color}) {
           Over the years I've has the pleasure of working with some amazing people and I've made some accomplishments along the way. You can take a look at <a href={withPrefix('/pdf/NickZuberResume.pdf')}>my resume</a> to see what I've been up to lately.
         </p>
 
-        <NewsItem date="November 2021">
+        <NewsItem date="Feb 2022">
+          <NewsText>
+            Promoted internally to a staff software engineer.
+          </NewsText>
+        </NewsItem>
+
+        <NewsItem date="Nov 2021">
           <NewsText>
             Robin's <a href="https://robinpowered.com/blog/a-flexible-tool-for-a-flexible-office">layout tool</a> officially launched! My team and I have been working hard on this product for the past year or so – it's basically Figma for building offices.
           </NewsText>
@@ -117,6 +123,7 @@ function NewsComponent ({color}) {
           </NewsText>
         </NewsItem>
 
+        {/*
         <NewsItem date="May 2015">
           <NewsText>
             Joined <a href="http://verandaoutdoors.com/">Veranda Outdoors</a> for the summer and led a small team of developers and created a wholesale ordering platform.
@@ -134,6 +141,40 @@ function NewsComponent ({color}) {
             Officially started attending college at <a href="https://uml.edu/">University of Massachusetts Lowell</a>, studying Computer Science and Mathematics.
           </NewsText>
         </NewsItem>
+        */}
+
+      <div
+        style={{
+          height: 40,
+          width: 20,
+          margin: '0 auto'
+        }}
+      >
+        <div style={{
+          background: '#282828',
+          opacity: 0.7,
+          height: 3,
+          width: 3,
+          borderRadius: '100%',
+          margin: '6px auto 0'
+        }} />
+        <div style={{
+          background: '#282828',
+          opacity: 0.6,
+          height: 3,
+          width: 3,
+          borderRadius: '100%',
+          margin: '6px auto 0'
+        }} />
+        <div style={{
+          background: '#282828',
+          opacity: 0.5,
+          height: 3,
+          width: 3,
+          borderRadius: '100%',
+          margin: '6px auto 0'
+        }} />
+      </div>
 
       </Container>
     </Section>
