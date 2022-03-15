@@ -46,7 +46,7 @@ function HeaderComponent () {
               <Disclaimer>Copyright {new Date().getFullYear()} Nick Zuber</Disclaimer>
             </WhiteTextContainer>
             <WhiteTextContainer textAlign="right">
-              <Disclaimer>Design inspired by Sarah Lim, built with Gatsby, hosted on GitHub</Disclaimer>
+              <Disclaimer>Built with Gatsby, hosted on GitHub</Disclaimer>
             </WhiteTextContainer>
           </FlexContainer>
         </Container>

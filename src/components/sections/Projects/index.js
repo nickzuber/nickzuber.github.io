@@ -129,7 +129,7 @@ function getLinkIcon(title) {
     case "youtube":
       return <i className="fab fa-youtube" />;
     case "pypi":
-      return <i class="fab fa-python" />;
+      return <i className="fab fa-python" />;
     default:
       return null;
   }
@@ -167,8 +167,8 @@ function getTagStyles(tag) {
       };
     default:
       return {
-        backgroundColor: "#eaeaea",
-        color: "#333333",
+        backgroundColor: 'rgb(255 222 103)',
+        color: 'rgb(91 91 91)'
       };
   }
 }
@@ -258,7 +258,7 @@ function ProjectsComponent({ color }) {
         </ProjectItem>
         <ProjectItem
           title="Meteorite: Smarter GitHub notifications"
-          subtitle="open source + Robin"
+          subtitle="open source"
           tags={["web app", "productivity"]}
           links={[
             { title: "github", url: "https://github.com/nickzuber/meteorite" },
@@ -309,7 +309,7 @@ function ProjectsComponent({ color }) {
         </ProjectItem>
         <ProjectItem
           title="chs: Play chess in your terminal"
-          subtitle="open source + pypi"
+          subtitle="open source"
           tags={["cli app"]}
           links={[
             { title: "github", url: "https://github.com/nickzuber/chs" },
@@ -333,7 +333,7 @@ function ProjectsComponent({ color }) {
         </ProjectItem>
         <ProjectItem
           title="ReasonML + JavaScript interoperability tool"
-          subtitle="open source + bucklescript"
+          subtitle="open source"
           tags={["developer tool", "productivity"]}
           links={[
             { title: "github", url: "https://github.com/nickzuber/add-reason" },
@@ -392,7 +392,7 @@ function ProjectsComponent({ color }) {
         </ProjectItem>
         <ProjectItem
           title="Markup: Create & share TeX snippets"
-          subtitle="open source + university of massachusetts lowell"
+          subtitle="open source"
           tags={["web app", "community"]}
           links={[
             { title: "github", url: "https://github.com/nickzuber/markup" },

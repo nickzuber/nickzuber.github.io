@@ -19,11 +19,11 @@ function DefaultRoute () {
   return (
     <>
       <SEO keywords={['nick', 'zuber', 'zubes', 'software', 'engineer', 'javascript']} />
-      <HeaderComponent color="#e8fdf5" />
+      <HeaderComponent />
       <AboutComponent />
-      <NewsComponent color="#e7f5ff" />
-      <ProjectsComponent color="#fffcd6" />
-      <WritingsComponent color="#e7f5ff" />
+      <NewsComponent />
+      <ProjectsComponent />
+      <WritingsComponent />
       <ReadingsComponent />
       <FooterComponent />
     </>
