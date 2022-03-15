@@ -7,6 +7,28 @@ import {
   SubHeader
 } from '../../ui';
 
+const Colors = [
+  '#51cf66',
+  '#fcc419',
+  '#ff922b',
+  '#20c997',
+  '#22b8cf',
+  '#339af0',
+  '#9775fa',
+  '#cc5de8',
+  '#f06595',
+  '#ff6b6b',
+];
+
+function* makeColorPicker () {
+  let i = 0;
+  while (true) {
+    yield Colors[i++ % Colors.length]
+  }
+}
+
+const pickColor = makeColorPicker()
+
 const NewsContainer = styled('div')({
   display: 'flex',
   flexDirection: 'row',
@@ -42,14 +64,30 @@ const NewsDate = styled('p')({
   fontWeight: '600',
   fontSize: '1rem',
   marginBottom: 0,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'flex-end',
+  '@media (max-width: 750px)': {
+    justifyContent: 'flex-start',
+  }
 });
+
+const Dot = styled('span')({
+  height: 6,
+  width: 6,
+  marginRight: 6,
+  borderRadius: '100%',
+  display: 'inline-block',
+}, props => ({
+  background: pickColor.next().value,
+}));
 
 function NewsItem ({date, children}) {
   return (
     <NewsContainer>
       <NewsDateContainer>
         <NewsDate>
-          {date}
+          <Dot />{date}
         </NewsDate>
       </NewsDateContainer>
       <NewsTextContainer>

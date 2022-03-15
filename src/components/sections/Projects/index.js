@@ -48,7 +48,7 @@ const ProjectHeader = styled(Header)({
     width: '50%',
     background: pickColor.next().value,
     position: 'absolute',
-    top: -6,
+    top: -8,
     left: -2,
     borderRadius: 2
   }
