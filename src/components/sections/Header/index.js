@@ -14,6 +14,7 @@ const ImageContainer = styled('div')({
   zIndex: 1,
   width: 200,
   height: 200,
+  margin: 'auto 0',
   '@media (max-width: 750px)': {
     marginTop: 20,
     marginBottom: 50
@@ -55,7 +56,7 @@ const List = styled('ul')({
   display: 'flex',
   flexWrap: 'wrap',
   justifyContent: 'flex-start',
-  margin: '20px 0',
+  margin: '20px 0 0',
   padding: 0,
   listStyleType: 'none',
   listStyle: 'none',
