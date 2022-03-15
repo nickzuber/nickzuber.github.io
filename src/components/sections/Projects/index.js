@@ -1,26 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Header, SubHeader, HeaderAlt, Section, Container } from "../../ui";
-
-const Colors = [
-  '#51cf66',
-  '#fcc419',
-  '#ff922b',
-  '#20c997',
-  '#22b8cf',
-  '#339af0',
-  '#9775fa',
-  '#cc5de8',
-  '#f06595',
-  '#ff6b6b',
-];
-
-function* makeColorPicker () {
-  let i = 0;
-  while (true) {
-    yield Colors[i++ % Colors.length]
-  }
-}
+import { makeColorPicker } from "../../utils";
 
 const pickColor = makeColorPicker()
 
@@ -45,10 +26,10 @@ const ProjectHeader = styled(Header)({
   '&:after': {
     content: '""',
     height: 3,
-    width: '50%',
+    width: '25%',
     background: pickColor.next().value,
     position: 'absolute',
-    top: -8,
+    top: -10,
     left: -2,
     borderRadius: 2
   }

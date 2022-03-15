@@ -7,10 +7,27 @@ import {
   Title,
   Authors
 } from '../../ui';
+import { makeColorPicker } from '../../utils';
+
+const pickColor = makeColorPicker()
 
 const TitleNoMargin = styled(Title)({
+  position: 'relative',
+  display: 'block',
   marginTop: 20
-});
+}, props => ({
+  '&:after': {
+    content: '""',
+    height: 3,
+    width: '25%',
+    maxWidth: 57,
+    background: pickColor.next().value,
+    position: 'absolute',
+    top: -10,
+    left: -2,
+    borderRadius: 2
+  }
+}));
 
 const ReadingItem = styled('p')({
   marginBottom: 40

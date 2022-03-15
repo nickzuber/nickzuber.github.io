@@ -8,9 +8,14 @@ import {
   Title,
   Authors
 } from '../../ui';
+import { makeColorPicker } from '../../utils';
+
+const pickColor = makeColorPicker()
 
 const TitleLink = styled(Title)({
-  display: 'inline',
+  position: 'relative',
+  width: '100%',
+  display: 'block',
   cursor: 'pointer',
   textDecoration: 'underline',
   textUnderlinePosition: 'unset',
@@ -19,7 +24,19 @@ const TitleLink = styled(Title)({
   '&:hover': {
     opacity: 0.75
   }
-});
+}, props => ({
+  '&:after': {
+    content: '""',
+    height: 3,
+    width: '25%',
+    maxWidth: 57,
+    background: pickColor.next().value,
+    position: 'absolute',
+    top: -10,
+    left: -2,
+    borderRadius: 2
+  }
+}));
 
 function WritingItem ({title, url, mediumUrl, date, children}) {
   const childrenNoPeriod = children[children.length - 1] === '.'
