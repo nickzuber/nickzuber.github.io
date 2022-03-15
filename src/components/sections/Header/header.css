@@ -51,6 +51,7 @@ img {
   height: 100%;
   z-index: -2;
   animation-name: outer-border-slide-out;
+  animation-delay: 500ms;
   animation-duration: 200ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
@@ -67,6 +68,7 @@ img {
   height: 100%;
   z-index: -1;
   animation-name: inner-border-slide-out;
+  animation-delay: 500ms;
   animation-duration: 200ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
