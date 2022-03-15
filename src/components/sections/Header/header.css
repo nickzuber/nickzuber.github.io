@@ -36,6 +36,10 @@ svg {
   width: auto;
 }
 
+img {
+  border-radius: 100% !important;
+}
+
 #header-image::after {
   content: "";
   border-radius: 100%;
