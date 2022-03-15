@@ -8,6 +8,12 @@
   align-items: center;
 }
 
+@media (max-width: 750px) {
+  .hot-links {
+    justify-content: center;
+  }
+}
+
 .hot-links a {
   outline: none !important;
   margin: 10px 7px;
