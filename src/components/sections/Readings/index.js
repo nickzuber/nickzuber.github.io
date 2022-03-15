@@ -20,7 +20,7 @@ function ReadingsComponent ({color}) {
   return (
     <Section id="readings" color={color}>
       <Container>
-        <SubHeader className="section-header">Readings</SubHeader>
+        <SubHeader className="section-header">What I've Read</SubHeader>
         <p>
           Reading not only helps me stay sane on the commutes to work, but it also helps me take deeper dives into topics of interest. Below is a collection of books and academic papers that I've enjoyed recently.
         </p>

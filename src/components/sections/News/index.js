@@ -11,7 +11,7 @@ const NewsContainer = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'space-between',
-  marginBottom: 16,
+  marginBottom: 24,
   '@media (max-width: 750px)': {
     flexDirection: 'column'
   }
@@ -39,7 +39,6 @@ const NewsText = styled('p')({
 });
 
 const NewsDate = styled('p')({
-  fontStyle: 'italic',
   fontWeight: '600',
   fontSize: '1rem',
   marginBottom: 0,
@@ -64,14 +63,14 @@ function NewsComponent ({color}) {
   return (
     <Section id="updates" color={color}>
       <Container style={{paddingBottom: 60}}>
-        <SubHeader className="section-header">Updates</SubHeader>
+        <SubHeader className="section-header">What I've Been Up To</SubHeader>
         <p style={{marginBottom: 40}}>
           Over the years I've has the pleasure of working with some amazing people and I've made some accomplishments along the way. You can take a look at <a href={withPrefix('/pdf/NickZuberResume.pdf')}>my resume</a> to see what I've been up to lately.
         </p>
 
         <NewsItem date="Feb 2022">
           <NewsText>
-            Promoted internally to a staff software engineer.
+            Promoted internally to a staff software engineer 🎉
           </NewsText>
         </NewsItem>
 
@@ -89,7 +88,7 @@ function NewsComponent ({color}) {
 
         <NewsItem date="April 2020">
           <NewsText>
-            Promoted internally to a senior software engineer. I also became the lead engineer on the <a href="https://robinpowered.com/features/maps/">maps</a> platform, helping optimize and evolve the product as a whole.
+            Promoted internally to a senior software engineer 🎉 I also became the lead engineer on the <a href="https://robinpowered.com/features/maps/">maps</a> platform, helping optimize and evolve the product as a whole.
           </NewsText>
         </NewsItem>
 
@@ -142,39 +141,6 @@ function NewsComponent ({color}) {
           </NewsText>
         </NewsItem>
         */}
-
-      <div
-        style={{
-          height: 40,
-          width: 20,
-          margin: '0 auto'
-        }}
-      >
-        <div style={{
-          background: '#282828',
-          opacity: 0.7,
-          height: 3,
-          width: 3,
-          borderRadius: '100%',
-          margin: '6px auto 0'
-        }} />
-        <div style={{
-          background: '#282828',
-          opacity: 0.6,
-          height: 3,
-          width: 3,
-          borderRadius: '100%',
-          margin: '6px auto 0'
-        }} />
-        <div style={{
-          background: '#282828',
-          opacity: 0.5,
-          height: 3,
-          width: 3,
-          borderRadius: '100%',
-          margin: '6px auto 0'
-        }} />
-      </div>
 
       </Container>
     </Section>

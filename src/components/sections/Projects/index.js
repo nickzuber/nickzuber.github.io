@@ -90,7 +90,7 @@ function ProjectItem({ title, subtitle, tags = [], links = [], children }) {
       <ProjectTitleContainer>
         <ProjectHeader>{title}</ProjectHeader>
         <ProjectHeaderAlt>{subtitle}</ProjectHeaderAlt>
-        <Tags tags={tags} />
+        {/* <Tags tags={tags} /> */}
       </ProjectTitleContainer>
       <ProjectDescriptionContainer>
         {children}
@@ -185,7 +185,7 @@ function ProjectsComponent({ color }) {
   return (
     <Section id="projects" color={color}>
       <Container>
-        <SubHeader className="section-header">Projects</SubHeader>
+        <SubHeader className="section-header">What I've Built</SubHeader>
 
         <p style={{ marginBottom: 40 }}>
           I love working on side projects. Creating free & accessible software is something I'm

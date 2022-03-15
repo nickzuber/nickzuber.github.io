@@ -29,8 +29,11 @@ const WhiteTextContainer = styled(Container)({
 
 const Disclaimer = styled('div')({
   fontSize: '1rem',
-  fontStyle: 'italic',
   fontWeight: 500,
+  'a': {
+    color: "#ffffff",
+    fontSize: '1rem',
+  },
   '@media (max-width: 750px)': {
     textAlign: 'left'
   }
@@ -43,10 +46,10 @@ function HeaderComponent () {
         <Container style={{paddingTop: 0, paddingBottom: 0}}>
           <FlexContainer>
             <WhiteTextContainer textAlign="left">
-              <Disclaimer>Copyright {new Date().getFullYear()} Nick Zuber</Disclaimer>
+              <Disclaimer>© {new Date().getFullYear()} — Nick Zuber</Disclaimer>
             </WhiteTextContainer>
             <WhiteTextContainer textAlign="right">
-              <Disclaimer>Built with Gatsby, hosted on GitHub</Disclaimer>
+              <Disclaimer>Design & layout inspired by <a href="https://slim.computer/">Sarah Lim</a>, built with Gatsby, hosted on GitHub</Disclaimer>
             </WhiteTextContainer>
           </FlexContainer>
         </Container>

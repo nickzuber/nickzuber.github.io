@@ -27,7 +27,7 @@ export const Header = styled('h1')({
 });
 
 export const SubHeader = styled(Header)({
-  fontSize: '3rem',
+  fontSize: '2.5rem',
   fontWeight: 500,
   margin: '0 0 10px'
 });

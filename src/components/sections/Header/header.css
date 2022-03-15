@@ -46,12 +46,12 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #282828;
+  background-color: #ddd;
   width: 100%;
   height: 100%;
   z-index: -2;
   animation-name: outer-border-slide-out;
-  animation-duration: 0ms;
+  animation-duration: 200ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
@@ -67,7 +67,7 @@ img {
   height: 100%;
   z-index: -1;
   animation-name: inner-border-slide-out;
-  animation-duration: 0ms;
+  animation-duration: 200ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
@@ -78,7 +78,7 @@ img {
   }
 
   100% {
-    transform: scale(1.05);
+    transform: scale(1.04);
   }
 }
 
@@ -88,6 +88,6 @@ img {
   }
 
   100% {
-    transform: scale(1.1);
+    transform: scale(1.075);
   }
 }

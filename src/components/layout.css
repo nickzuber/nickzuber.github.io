@@ -38,15 +38,14 @@ h3 {
 }
 
 a {
-  text-decoration: none;
+  color: rgba(0, 0, 0, 0.84);
   font-size: 1.2rem;
   line-height: 1.85rem;
-  color: #040404;
-  background: #f5d76ea6;
+  text-decoration: underline;
   transition: all 150ms linear;
 }
 a:hover {
-  background: #f5d76e;
+  opacity: 0.75;
 }
 
 p {
