@@ -63,7 +63,7 @@ function WritingsComponent ({color}) {
   return (
     <Section id="writings" color={color}>
       <Container>
-        <SubHeader className="section-header">What I've Wrote</SubHeader>
+        <SubHeader className="section-header">What I've Written</SubHeader>
         <p style={{marginBottom: 40}}>
           When I'm not reading about new things, I like writing about them. I've recently been posting all of my articles to <a href="https://medium.com/@nickzuber/">Medium</a>, but I've listed out a few of my favorites below:
         </p>
