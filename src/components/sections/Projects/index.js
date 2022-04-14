@@ -210,6 +210,23 @@ function ProjectsComponent({ color }) {
         </p>
 
         <ProjectItem
+          title="Notion Draw: Simple embdded doodling app"
+          subtitle="embedded app"
+          color="#fa5252"
+          tags={["game", "web app"]}
+          links={[
+            { title: "github", url: "https://github.com/nickzuber/notion-draw" },
+            { title: "website", url: "https://www.notion-draw.art/" },
+            { title: "tweets", url: "https://twitter.com/nick_zuber/status/1512138346788704260" },
+          ]}
+        >
+          <ProjectDescription>
+            Simple drawing web app designed to be embedded in Notion pages. This unlocks the ability to
+            doodle directly within Notion, which is something I've wanted for a while.
+          </ProjectDescription>
+        </ProjectItem>
+
+        <ProjectItem
           title="Crosswordle: A daily crossword game"
           subtitle="daily game"
           color="#fa5252"
@@ -232,7 +249,7 @@ function ProjectsComponent({ color }) {
 
         <ProjectItem
           title="Spectre: Simple SVG editor for tracing"
-          subtitle="open source"
+          subtitle="editor"
           color="#be4bdb"
           tags={["editor", "web app", "svg"]}
           links={[
@@ -253,7 +270,7 @@ function ProjectsComponent({ color }) {
 
         <ProjectItem
           title="Infrared: Inferred static type checker for JavaScript"
-          subtitle="open source"
+          subtitle="compiler"
           color="#5c7cfa"
           tags={["type system", "language", "developer tool"]}
           links={[
@@ -274,9 +291,10 @@ function ProjectsComponent({ color }) {
             without changing <i>anything</i> in your project, use Infrared.
           </ProjectDescription>
         </ProjectItem>
+
         <ProjectItem
           title="Meteorite: Smarter GitHub notifications"
-          subtitle="open source"
+          subtitle="productivity"
           color="#20c997"
           tags={["web app", "productivity"]}
           links={[
@@ -303,6 +321,7 @@ function ProjectsComponent({ color }) {
             personalized heuristics, and using desktop notifications.
           </ProjectDescription>
         </ProjectItem>
+
         <ProjectItem
           title="ClusterRunner: Optimize test suites horizontally "
           subtitle="box"
@@ -327,9 +346,10 @@ function ProjectsComponent({ color }) {
             the API.
           </ProjectDescription>
         </ProjectItem>
+
         <ProjectItem
           title="chs: Play chess in your terminal"
-          subtitle="open source"
+          subtitle="cli game"
           color="#20c997"
           tags={["cli app"]}
           links={[
@@ -352,9 +372,10 @@ function ProjectsComponent({ color }) {
             to print the chess board was an interesting challenge.
           </ProjectDescription>
         </ProjectItem>
+
         <ProjectItem
           title="ReasonML + JavaScript interoperability tool"
-          subtitle="open source"
+          subtitle="dev tool"
           color="#20c997"
           tags={["developer tool", "productivity"]}
           links={[
@@ -385,6 +406,7 @@ function ProjectsComponent({ color }) {
             !
           </ProjectDescription>
         </ProjectItem>
+
         <ProjectItem
           title="Kelp: x86-64 compiler"
           subtitle="COMP 4060: Compiler Construction"
@@ -413,9 +435,10 @@ function ProjectsComponent({ color }) {
             in C to compliment it.
           </ProjectDescription>
         </ProjectItem>
+
         <ProjectItem
           title="Markup: Create & share TeX snippets"
-          subtitle="open source"
+          subtitle="collaboration"
           color="#20c997"
           tags={["web app", "community"]}
           links={[
@@ -435,9 +458,10 @@ function ProjectsComponent({ color }) {
             which was nice.
           </ProjectDescription>
         </ProjectItem>
+
         <ProjectItem
           title="Needle: Extensive data structure library"
-          subtitle="open source"
+          subtitle="library"
           color="#51cf66"
           tags={["community", "productivity"]}
           links={[

@@ -45,22 +45,18 @@ svg {
 img {
   border-radius: 100% !important;
 }
-
+/*
 #header-image::after {
   content: "";
   border-radius: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #ddd;
+  background-color: #dddddd88;
   width: 100%;
   height: 100%;
   z-index: -2;
-  animation-name: outer-border-slide-out;
-  animation-delay: 500ms;
-  animation-duration: 200ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
+  transform: scale(1.075);
 }
 
 #header-image::before {
@@ -69,33 +65,9 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #fafafa;
+  background-color: #fff;
   width: 100%;
   height: 100%;
   z-index: -1;
-  animation-name: inner-border-slide-out;
-  animation-delay: 500ms;
-  animation-duration: 200ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-
-@keyframes inner-border-slide-out {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1.04);
-  }
-}
-
-@keyframes outer-border-slide-out {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1.075);
-  }
-}
+  transform: scale(1.04);
+} */

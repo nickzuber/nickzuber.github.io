@@ -1,4 +1,5 @@
 import React from 'react';
+import {keyframes} from '@emotion/core';
 import styled from '@emotion/styled';
 import {
   Section,
@@ -7,7 +8,63 @@ import {
 } from '../../ui';
 import Image from '../../image';
 import SocialMedia from './SocialMedia';
+import Blob1Svg from '../../../images/blob-shape-1.svg';
+import Blob2Svg from '../../../images/blob-shape-2.svg';
 import './header.css';
+
+const B1 = Blob1Svg;
+const B2 = Blob2Svg;
+
+const BlockOptions = {
+  scale: 2.2,
+  speed: 5
+}
+
+const blobFrames1 = keyframes`
+  0% {
+    transform: translateY(-8px) rotate(14deg) scale(${BlockOptions.scale});
+  }
+  50% {
+    transform: translateY(-8px) rotate(0deg) scale(${BlockOptions.scale - 0.02});
+  }
+  100% {
+    transform: translateY(-8px) rotate(14deg) scale(${BlockOptions.scale});
+  }
+`;
+
+const blobFrames2 = keyframes`
+  0% {
+    transform: translateY(-8px) rotate(-2deg) scale(${BlockOptions.scale});
+  }
+  50% {
+    transform: translateY(-8px) rotate(0deg) scale(${BlockOptions.scale + 0.04});
+  }
+  100% {
+    transform: translateY(-8px) rotate(-2deg) scale(${BlockOptions.scale});
+  }
+`;
+
+const BaseBlob = styled.div`
+  pointer-events: none;
+  flex: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+`;
+
+const Blob1 = styled(BaseBlob)`
+  background: url(${B1}) center center no-repeat;
+  background-size: contain;
+  animation: ${blobFrames1} ${BlockOptions.speed + 10}s infinite;
+`;
+
+const Blob2 = styled(BaseBlob)`
+  background: url(${B2}) center center no-repeat;
+  background-size: contain;
+  animation: ${blobFrames2} ${BlockOptions.speed}s infinite;
+`;
 
 const ImageContainer = styled('div')({
   position: 'relative',
@@ -76,21 +133,6 @@ const ListItem = styled('li')({
   }
 });
 
-const Caption = styled('figcaption')({
-  marginTop: 20,
-  fontStyle: 'italic',
-  fontWeight: 500,
-  fontSize: '1.2rem',
-  lineHeight: '1.8rem',
-  textAlign: 'center',
-  '&:before': {
-    content: 'open-quote'
-  },
-  '&:after': {
-    content: 'close-quote'
-  },
-});
-
 const Item = ({to = "#", children}) => (
   <ListItem>
     <a href={to}>{children}</a>
@@ -116,8 +158,9 @@ function HeaderComponent ({color}) {
           </List>
         </div>
         <ImageContainer id="header-image">
+          <Blob1 />
+          <Blob2 />
           <Image />
-          {/* <Caption>Kingdom Hearts is just a fanfic gone too far.</Caption> */}
         </ImageContainer>
       </HeaderContainer>
     </Section>

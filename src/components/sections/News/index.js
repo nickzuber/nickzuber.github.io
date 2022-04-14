@@ -87,6 +87,12 @@ function NewsComponent ({color}) {
           Over the years I've has the pleasure of working with some amazing people and I've made some accomplishments along the way. You can take a look at <a href={withPrefix('/pdf/NickZuberResume.pdf')}>my resume</a> to see what I've been up to lately.
         </p>
 
+        <NewsItem date="April 2022">
+          <NewsText>
+            Joined <a href="https://notion.so/product">Notion</a> to help work on their enterprise efforts 🪴
+          </NewsText>
+        </NewsItem>
+
         <NewsItem date="Feb 2022">
           <NewsText>
             Promoted internally to a staff software engineer 🎉
