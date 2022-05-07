@@ -16,7 +16,7 @@ const B1 = Blob1Svg;
 const B2 = Blob2Svg;
 
 const BlockOptions = {
-  scale: 2.2,
+  scale: 2.6,
   speed: 5
 }
 
@@ -69,12 +69,12 @@ const Blob2 = styled(BaseBlob)`
 const ImageContainer = styled('div')({
   position: 'relative',
   zIndex: 1,
-  width: 200,
-  height: 200,
+  width: 180,
+  height: 180,
   margin: 'auto 0',
+  marginRight: 50,
   '@media (max-width: 750px)': {
-    marginTop: 20,
-    marginBottom: 50
+    margin: '40px auto 60px',
   }
 });
 
@@ -84,6 +84,7 @@ const HeaderContainer = styled('header')({
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'space-between',
+  overflow: 'hidden',
   padding: 60,
   '@media (max-width: 750px)': {
     padding: 30,
