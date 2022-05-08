@@ -78,7 +78,16 @@ function WritingsComponent ({color}) {
         </WritingItem> */}
 
         <WritingItem
-          title="Why GitHub notifications make it hard to get things done & how to fix it."
+          title="Procedurally Generating Indoor Pathways."
+          url="https://medium.com/@nickzuber/procedurally-generating-indoor-pathways-dbf7d7fe4ace"
+          mediumUrl="https://medium.com/@nickzuber/procedurally-generating-indoor-pathways-dbf7d7fe4ace"
+          date="May 2022"
+        >
+          Exploring a new technique for wayfinding that doesn't involve drawing anything by hand. Spoiler alert, fun with Voronoi diagrams and math!
+        </WritingItem>
+
+        <WritingItem
+          title="Why GitHub notifications make it hard to get things done & how to fix it."
           url="https://medium.com/@nickzuber/why-github-notifications-make-it-hard-to-get-things-done-how-to-fix-it-be7cea936063"
           mediumUrl="https://medium.com/@nickzuber/why-github-notifications-make-it-hard-to-get-things-done-how-to-fix-it-be7cea936063"
           date="February 2019"
